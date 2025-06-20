@@ -1,0 +1,158 @@
+2025-06-18 17: 19: 06.396 | 2025-06-18T21: 19: 06.396Z	info	service@v0.128.0/service.go: 199	Setting up own telemetry...	{
+  "resource": {
+    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
+    "service.name": "otelcol",
+    "service.version": "0.128.0"
+  }
+}
+2025-06-18 17: 19: 06.397 | 2025-06-18T21: 19: 06.396Z	info	builders/builders.go: 26	Development component. May change in the future.	{
+  "resource": {
+    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
+    "service.name": "otelcol",
+    "service.version": "0.128.0"
+  },
+  "otelcol.component.id": "debug",
+  "otelcol.component.kind": "exporter",
+  "otelcol.signal": "traces"
+}
+2025-06-18 17: 19: 06.397 | 2025-06-18T21: 19: 06.397Z	info	service@v0.128.0/service.go: 259	Starting otelcol...	{
+  "resource": {
+    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
+    "service.name": "otelcol",
+    "service.version": "0.128.0"
+  },
+  "Version": "0.128.0",
+  "NumCPU": 12
+}
+2025-06-18 17: 19: 06.397 | 2025-06-18T21: 19: 06.397Z	info	extensions/extensions.go: 41	Starting extensions...	{
+  "resource": {
+    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
+    "service.name": "otelcol",
+    "service.version": "0.128.0"
+  }
+}
+2025-06-18 17: 19: 06.398 | 2025-06-18T21: 19: 06.398Z	info	otlpreceiver@v0.128.0/otlp.go: 117	Starting GRPC server	{
+  "resource": {
+    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
+    "service.name": "otelcol",
+    "service.version": "0.128.0"
+  },
+  "otelcol.component.id": "otlp",
+  "otelcol.component.kind": "receiver",
+  "endpoint": "0.0.0.0:4317"
+}
+2025-06-18 17: 19: 06.398 | 2025-06-18T21: 19: 06.398Z	info	otlpreceiver@v0.128.0/otlp.go: 175	Starting HTTP server	{
+  "resource": {
+    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
+    "service.name": "otelcol",
+    "service.version": "0.128.0"
+  },
+  "otelcol.component.id": "otlp",
+  "otelcol.component.kind": "receiver",
+  "endpoint": "0.0.0.0:4318"
+}
+2025-06-18 17: 19: 06.398 | 2025-06-18T21: 19: 06.398Z	info	service@v0.128.0/service.go: 282	Everything is ready. Begin running and processing data.	{
+  "resource": {
+    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
+    "service.name": "otelcol",
+    "service.version": "0.128.0"
+  }
+}
+2025-06-18 17: 19: 26.714 | 2025-06-18T21: 19: 26.712Z	info	Traces	{
+  "resource": {
+    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
+    "service.name": "otelcol",
+    "service.version": "0.128.0"
+  },
+  "otelcol.component.id": "debug",
+  "otelcol.component.kind": "exporter",
+  "otelcol.signal": "traces",
+  "resource spans": 1,
+  "spans": 3
+}
+2025-06-18 17: 19: 26.717 | 2025-06-18T21: 19: 26.715Z	info	ResourceSpans #0
+2025-06-18 17: 19: 26.717 | Resource SchemaURL: 2025-06-18 17: 19: 26.717 | Resource attributes: 2025-06-18 17: 19: 26.717 |      -> service.name: Str(life-of-a-span)
+2025-06-18 17: 19: 26.717 |      -> host.name: Str(jamiedanielson)
+2025-06-18 17: 19: 26.717 |      -> host.arch: Str(arm64)
+2025-06-18 17: 19: 26.717 |      -> host.id: Str(79500692-6A8B-5982-9732-2FDB84D7E66E)
+2025-06-18 17: 19: 26.717 |      -> process.pid: Int(75646)
+2025-06-18 17: 19: 26.717 |      -> process.executable.name: Str(node)
+2025-06-18 17: 19: 26.717 |      -> process.executable.path: Str(/Users/jamiedanielson/.asdf/installs/nodejs/20.6.0/bin/node)
+2025-06-18 17: 19: 26.717 |      -> process.command_args: Slice([
+  "/Users/jamiedanielson/.asdf/installs/nodejs/20.6.0/bin/node",
+  "/Users/jamiedanielson/code/life-of-a-span/dist/index.js"
+])
+2025-06-18 17: 19: 26.717 |      -> process.runtime.version: Str(20.6.0)
+2025-06-18 17: 19: 26.717 |      -> process.runtime.name: Str(nodejs)
+2025-06-18 17: 19: 26.717 |      -> process.runtime.description: Str(Node.js)
+2025-06-18 17: 19: 26.717 |      -> process.command: Str(/Users/jamiedanielson/code/life-of-a-span/dist/index.js)
+2025-06-18 17: 19: 26.717 |      -> process.owner: Str(jamiedanielson)
+2025-06-18 17: 19: 26.717 |      -> telemetry.sdk.language: Str(nodejs)
+2025-06-18 17: 19: 26.717 |      -> telemetry.sdk.name: Str(opentelemetry)
+2025-06-18 17: 19: 26.717 |      -> telemetry.sdk.version: Str(2.0.0)
+2025-06-18 17: 19: 26.717 | ScopeSpans #0
+2025-06-18 17: 19: 26.717 | ScopeSpans SchemaURL: 2025-06-18 17: 19: 26.717 | InstrumentationScope spanley-tracer
+2025-06-18 17: 19: 26.717 | Span #0
+2025-06-18 17: 19: 26.717 |     Trace ID       : b21b10fcb48e7e00d0c6a7aca1fae38b
+2025-06-18 17: 19: 26.717 |     Parent ID      : 311a4680b3544a47
+2025-06-18 17: 19: 26.717 |     ID             : ca556a907c65a80a
+2025-06-18 17: 19: 26.717 |     Name           : spanley-picking-up-clues
+2025-06-18 17: 19: 26.717 |     Kind           : Internal
+2025-06-18 17: 19: 26.717 |     Start time     : 2025-06-18 21: 19: 20.514 +0000 UTC
+2025-06-18 17: 19: 26.717 |     End time       : 2025-06-18 21: 19: 21.518824 +0000 UTC
+2025-06-18 17: 19: 26.717 |     Status code    : Unset
+2025-06-18 17: 19: 26.717 |     Status message : 2025-06-18 17: 19: 26.717 | Attributes: 2025-06-18 17: 19: 26.717 |      -> app.distraction: Str(squirrel)
+2025-06-18 17: 19: 26.717 | Events: 2025-06-18 17: 19: 26.717 | SpanEvent #0
+2025-06-18 17: 19: 26.717 |      -> Name: spanley saw a squirrel
+2025-06-18 17: 19: 26.717 |      -> Timestamp: 2025-06-18 21: 19: 21.515300292 +0000 UTC
+2025-06-18 17: 19: 26.717 |      -> DroppedAttributesCount: 0
+2025-06-18 17: 19: 26.717 | ScopeSpans #1
+2025-06-18 17: 19: 26.717 | ScopeSpans SchemaURL: 2025-06-18 17: 19: 26.717 | InstrumentationScope @opentelemetry/instrumentation-express 0.49.0
+2025-06-18 17: 19: 26.717 | Span #0
+2025-06-18 17: 19: 26.717 |     Trace ID       : b21b10fcb48e7e00d0c6a7aca1fae38b
+2025-06-18 17: 19: 26.717 |     Parent ID      : cafa61750684cd5a
+2025-06-18 17: 19: 26.717 |     ID             : 311a4680b3544a47
+2025-06-18 17: 19: 26.717 |     Name           : request handler - /hello
+2025-06-18 17: 19: 26.717 |     Kind           : Internal
+2025-06-18 17: 19: 26.717 |     Start time     : 2025-06-18 21: 19: 20.513 +0000 UTC
+2025-06-18 17: 19: 26.717 |     End time       : 2025-06-18 21: 19: 21.518778708 +0000 UTC
+2025-06-18 17: 19: 26.717 |     Status code    : Unset
+2025-06-18 17: 19: 26.717 |     Status message : 2025-06-18 17: 19: 26.717 | Attributes: 2025-06-18 17: 19: 26.717 |      -> http.route: Str(/hello)
+2025-06-18 17: 19: 26.717 |      -> express.name: Str(/hello)
+2025-06-18 17: 19: 26.717 |      -> express.type: Str(request_handler)
+2025-06-18 17: 19: 26.717 | ScopeSpans #2
+2025-06-18 17: 19: 26.717 | ScopeSpans SchemaURL: 2025-06-18 17: 19: 26.717 | InstrumentationScope @opentelemetry/instrumentation-http 0.200.0
+2025-06-18 17: 19: 26.717 | Span #0
+2025-06-18 17: 19: 26.717 |     Trace ID       : b21b10fcb48e7e00d0c6a7aca1fae38b
+2025-06-18 17: 19: 26.717 |     Parent ID      : 2025-06-18 17: 19: 26.717 |     ID             : cafa61750684cd5a
+2025-06-18 17: 19: 26.717 |     Name           : GET /hello
+2025-06-18 17: 19: 26.717 |     Kind           : Server
+2025-06-18 17: 19: 26.717 |     Start time     : 2025-06-18 21: 19: 20.511 +0000 UTC
+2025-06-18 17: 19: 26.717 |     End time       : 2025-06-18 21: 19: 21.519644041 +0000 UTC
+2025-06-18 17: 19: 26.717 |     Status code    : Unset
+2025-06-18 17: 19: 26.717 |     Status message : 2025-06-18 17: 19: 26.717 | Attributes: 2025-06-18 17: 19: 26.717 |      -> http.url: Str(http: //localhost:3000/hello)
+2025-06-18 17: 19: 26.717 |      -> http.host: Str(localhost: 3000)
+2025-06-18 17: 19: 26.717 |      -> net.host.name: Str(localhost)
+2025-06-18 17: 19: 26.717 |      -> http.method: Str(GET)
+2025-06-18 17: 19: 26.717 |      -> http.scheme: Str(http)
+2025-06-18 17: 19: 26.717 |      -> http.target: Str(/hello)
+2025-06-18 17: 19: 26.717 |      -> http.user_agent: Str(curl/8.7.1)
+2025-06-18 17: 19: 26.717 |      -> http.flavor: Str(1.1)
+2025-06-18 17: 19: 26.717 |      -> net.transport: Str(ip_tcp)
+2025-06-18 17: 19: 26.717 |      -> net.host.ip: Str(: : 1)
+2025-06-18 17: 19: 26.717 |      -> net.host.port: Int(3000)
+2025-06-18 17: 19: 26.717 |      -> net.peer.ip: Str(: : 1)
+2025-06-18 17: 19: 26.717 |      -> net.peer.port: Int(56777)
+2025-06-18 17: 19: 26.717 |      -> http.status_code: Int(200)
+2025-06-18 17: 19: 26.717 |      -> http.status_text: Str(OK)
+2025-06-18 17: 19: 26.717 |      -> http.route: Str(/hello)
+2025-06-18 17: 19: 26.718 | 	{
+  "resource": {
+    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
+    "service.name": "otelcol",
+    "service.version": "0.128.0"
+  },
+  "otelcol.component.id": "debug",
+  "otelcol.component.kind": "exporter",
+  "otelcol.signal": "traces"
+}
