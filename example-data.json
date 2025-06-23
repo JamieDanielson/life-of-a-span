@@ -30,7 +30,7 @@
           {
             "key": "process.pid",
             "value": {
-              "intValue": "75646"
+              "intValue": "27911"
             }
           },
           {
@@ -113,29 +113,1053 @@
       "scopeSpans": [
         {
           "scope": {
-            "name": "spanley-tracer"
+            "name": "relay-race-tracer"
           },
           "spans": [
             {
-              "traceId": "b21b10fcb48e7e00d0c6a7aca1fae38b",
-              "spanId": "ca556a907c65a80a",
-              "parentSpanId": "311a4680b3544a47",
-              "name": "spanley-picking-up-clues",
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "8ee63db91914497a",
+              "parentSpanId": "788314692a813566",
+              "name": "Spandora-runner-1-leg-1",
               "kind": 1,
-              "startTimeUnixNano": "1750281560514000000",
-              "endTimeUnixNano": "1750281561518824000",
+              "startTimeUnixNano": "1750714266292000000",
+              "endTimeUnixNano": "1750714266541579458",
               "attributes": [
                 {
-                  "key": "app.distraction",
+                  "key": "runner.name",
                   "value": {
-                    "stringValue": "squirrel"
+                    "stringValue": "Spandora-runner-1"
+                  }
+                },
+                {
+                  "key": "runner.leg",
+                  "value": {
+                    "intValue": "1"
+                  }
+                },
+                {
+                  "key": "runner.team",
+                  "value": {
+                    "stringValue": "Team Gamma"
+                  }
+                },
+                {
+                  "key": "baton.received",
+                  "value": {
+                    "stringValue": "starting"
+                  }
+                },
+                {
+                  "key": "baton.passed",
+                  "value": {
+                    "stringValue": "yes"
                   }
                 }
               ],
               "events": [
                 {
-                  "timeUnixNano": "1750281561515300292",
-                  "name": "spanley saw a squirrel"
+                  "timeUnixNano": "1750714266541380416",
+                  "name": "Spandora-runner-1 completed leg 1"
+                },
+                {
+                  "timeUnixNano": "1750714266541470416",
+                  "name": "Baton passed to Spandora-runner-2"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "7ffcc25a9485944a",
+              "parentSpanId": "9cfa7d22ce4f628c",
+              "name": "Spannika-runner-1-leg-1",
+              "kind": 1,
+              "startTimeUnixNano": "1750714266292000000",
+              "endTimeUnixNano": "1750714266569533916",
+              "attributes": [
+                {
+                  "key": "runner.name",
+                  "value": {
+                    "stringValue": "Spannika-runner-1"
+                  }
+                },
+                {
+                  "key": "runner.leg",
+                  "value": {
+                    "intValue": "1"
+                  }
+                },
+                {
+                  "key": "runner.team",
+                  "value": {
+                    "stringValue": "Team Delta"
+                  }
+                },
+                {
+                  "key": "baton.received",
+                  "value": {
+                    "stringValue": "starting"
+                  }
+                },
+                {
+                  "key": "baton.passed",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750714266569467458",
+                  "name": "Spannika-runner-1 completed leg 1"
+                },
+                {
+                  "timeUnixNano": "1750714266569512541",
+                  "name": "Baton passed to Spannika-runner-2"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "c4650ae3305eebaa",
+              "parentSpanId": "788314692a813566",
+              "name": "Spandora-runner-2-leg-2",
+              "kind": 1,
+              "startTimeUnixNano": "1750714266542000000",
+              "endTimeUnixNano": "1750714266882671125",
+              "attributes": [
+                {
+                  "key": "runner.name",
+                  "value": {
+                    "stringValue": "Spandora-runner-2"
+                  }
+                },
+                {
+                  "key": "runner.leg",
+                  "value": {
+                    "intValue": "2"
+                  }
+                },
+                {
+                  "key": "runner.team",
+                  "value": {
+                    "stringValue": "Team Gamma"
+                  }
+                },
+                {
+                  "key": "baton.received",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                },
+                {
+                  "key": "baton.passed",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750714266882591750",
+                  "name": "Spandora-runner-2 completed leg 2"
+                },
+                {
+                  "timeUnixNano": "1750714266882624375",
+                  "name": "Baton passed to Spandora-runner-3"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "3984f01b25d1b213",
+              "parentSpanId": "21c34dee15caee3b",
+              "name": "Spanley-runner-1-leg-1",
+              "kind": 1,
+              "startTimeUnixNano": "1750714266291000000",
+              "endTimeUnixNano": "1750714266933367166",
+              "attributes": [
+                {
+                  "key": "runner.name",
+                  "value": {
+                    "stringValue": "Spanley-runner-1"
+                  }
+                },
+                {
+                  "key": "runner.leg",
+                  "value": {
+                    "intValue": "1"
+                  }
+                },
+                {
+                  "key": "runner.team",
+                  "value": {
+                    "stringValue": "Team Alpha"
+                  }
+                },
+                {
+                  "key": "baton.received",
+                  "value": {
+                    "stringValue": "starting"
+                  }
+                },
+                {
+                  "key": "baton.passed",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750714266933299916",
+                  "name": "Spanley-runner-1 completed leg 1"
+                },
+                {
+                  "timeUnixNano": "1750714266933324250",
+                  "name": "Baton passed to Spanley-runner-2"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "80f7dd8bad0f0db9",
+              "parentSpanId": "b477765af103c3f3",
+              "name": "Spandrew-runner-1-leg-1",
+              "kind": 1,
+              "startTimeUnixNano": "1750714266292000000",
+              "endTimeUnixNano": "1750714267019131709",
+              "attributes": [
+                {
+                  "key": "runner.name",
+                  "value": {
+                    "stringValue": "Spandrew-runner-1"
+                  }
+                },
+                {
+                  "key": "runner.leg",
+                  "value": {
+                    "intValue": "1"
+                  }
+                },
+                {
+                  "key": "runner.team",
+                  "value": {
+                    "stringValue": "Team Beta"
+                  }
+                },
+                {
+                  "key": "baton.received",
+                  "value": {
+                    "stringValue": "starting"
+                  }
+                },
+                {
+                  "key": "baton.passed",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750714267019063334",
+                  "name": "Spandrew-runner-1 completed leg 1"
+                },
+                {
+                  "timeUnixNano": "1750714267019108625",
+                  "name": "Baton passed to Spandrew-runner-2"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "b7561d79ddf95aa2",
+              "parentSpanId": "9cfa7d22ce4f628c",
+              "name": "Spannika-runner-2-leg-2",
+              "kind": 1,
+              "startTimeUnixNano": "1750714266570000000",
+              "endTimeUnixNano": "1750714267211298625",
+              "attributes": [
+                {
+                  "key": "runner.name",
+                  "value": {
+                    "stringValue": "Spannika-runner-2"
+                  }
+                },
+                {
+                  "key": "runner.leg",
+                  "value": {
+                    "intValue": "2"
+                  }
+                },
+                {
+                  "key": "runner.team",
+                  "value": {
+                    "stringValue": "Team Delta"
+                  }
+                },
+                {
+                  "key": "baton.received",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                },
+                {
+                  "key": "baton.passed",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750714267211242375",
+                  "name": "Spannika-runner-2 completed leg 2"
+                },
+                {
+                  "timeUnixNano": "1750714267211263584",
+                  "name": "Baton passed to Spannika-runner-3"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "512bdeb219ffbd83",
+              "parentSpanId": "9cfa7d22ce4f628c",
+              "name": "Spannika-runner-3-leg-3",
+              "kind": 1,
+              "startTimeUnixNano": "1750714267212000000",
+              "endTimeUnixNano": "1750714267423267083",
+              "attributes": [
+                {
+                  "key": "runner.name",
+                  "value": {
+                    "stringValue": "Spannika-runner-3"
+                  }
+                },
+                {
+                  "key": "runner.leg",
+                  "value": {
+                    "intValue": "3"
+                  }
+                },
+                {
+                  "key": "runner.team",
+                  "value": {
+                    "stringValue": "Team Delta"
+                  }
+                },
+                {
+                  "key": "baton.received",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                },
+                {
+                  "key": "baton.passed",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750714267423101083",
+                  "name": "Spannika-runner-3 completed leg 3"
+                },
+                {
+                  "timeUnixNano": "1750714267423247250",
+                  "name": "Baton passed to Spannika-runner-4"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "e469790410154c9f",
+              "parentSpanId": "788314692a813566",
+              "name": "Spandora-runner-3-leg-3",
+              "kind": 1,
+              "startTimeUnixNano": "1750714266883000000",
+              "endTimeUnixNano": "1750714267465513416",
+              "attributes": [
+                {
+                  "key": "runner.name",
+                  "value": {
+                    "stringValue": "Spandora-runner-3"
+                  }
+                },
+                {
+                  "key": "runner.leg",
+                  "value": {
+                    "intValue": "3"
+                  }
+                },
+                {
+                  "key": "runner.team",
+                  "value": {
+                    "stringValue": "Team Gamma"
+                  }
+                },
+                {
+                  "key": "baton.received",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                },
+                {
+                  "key": "baton.passed",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750714267465481833",
+                  "name": "Spandora-runner-3 completed leg 3"
+                },
+                {
+                  "timeUnixNano": "1750714267465491375",
+                  "name": "Baton passed to Spandora-runner-4"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "297254d6817ed8bd",
+              "parentSpanId": "b477765af103c3f3",
+              "name": "Spandrew-runner-2-leg-2",
+              "kind": 1,
+              "startTimeUnixNano": "1750714267019000000",
+              "endTimeUnixNano": "1750714267540294167",
+              "attributes": [
+                {
+                  "key": "runner.name",
+                  "value": {
+                    "stringValue": "Spandrew-runner-2"
+                  }
+                },
+                {
+                  "key": "runner.leg",
+                  "value": {
+                    "intValue": "2"
+                  }
+                },
+                {
+                  "key": "runner.team",
+                  "value": {
+                    "stringValue": "Team Beta"
+                  }
+                },
+                {
+                  "key": "baton.received",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                },
+                {
+                  "key": "baton.passed",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750714267540238292",
+                  "name": "Spandrew-runner-2 completed leg 2"
+                },
+                {
+                  "timeUnixNano": "1750714267540259917",
+                  "name": "Baton passed to Spandrew-runner-3"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "9676ad168cfa3e3c",
+              "parentSpanId": "9cfa7d22ce4f628c",
+              "name": "Spannika-runner-4-leg-4",
+              "kind": 1,
+              "startTimeUnixNano": "1750714267423000000",
+              "endTimeUnixNano": "1750714267694059541",
+              "attributes": [
+                {
+                  "key": "runner.name",
+                  "value": {
+                    "stringValue": "Spannika-runner-4"
+                  }
+                },
+                {
+                  "key": "runner.leg",
+                  "value": {
+                    "intValue": "4"
+                  }
+                },
+                {
+                  "key": "runner.team",
+                  "value": {
+                    "stringValue": "Team Delta"
+                  }
+                },
+                {
+                  "key": "baton.received",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                },
+                {
+                  "key": "race.finished",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750714267693993125",
+                  "name": "Spannika-runner-4 completed leg 4"
+                },
+                {
+                  "timeUnixNano": "1750714267694014166",
+                  "name": "Team Delta finished the race!"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "9cfa7d22ce4f628c",
+              "parentSpanId": "ff5ba05e29d20871",
+              "name": "relay-team-spannika",
+              "kind": 1,
+              "startTimeUnixNano": "1750714266292000000",
+              "endTimeUnixNano": "1750714267693904834",
+              "attributes": [
+                {
+                  "key": "team.name",
+                  "value": {
+                    "stringValue": "Team Delta"
+                  }
+                },
+                {
+                  "key": "team.leader",
+                  "value": {
+                    "stringValue": "Spannika"
+                  }
+                },
+                {
+                  "key": "team.color",
+                  "value": {
+                    "stringValue": "yellow"
+                  }
+                },
+                {
+                  "key": "team.index",
+                  "value": {
+                    "intValue": "3"
+                  }
+                },
+                {
+                  "key": "race.total_time_ms",
+                  "value": {
+                    "intValue": "1399"
+                  }
+                },
+                {
+                  "key": "race.status",
+                  "value": {
+                    "stringValue": "completed"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750714267693898875",
+                  "name": "Team Delta completed relay in 1399ms"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "1bb7d551b4ea1c18",
+              "parentSpanId": "21c34dee15caee3b",
+              "name": "Spanley-runner-2-leg-2",
+              "kind": 1,
+              "startTimeUnixNano": "1750714266934000000",
+              "endTimeUnixNano": "1750714267711490625",
+              "attributes": [
+                {
+                  "key": "runner.name",
+                  "value": {
+                    "stringValue": "Spanley-runner-2"
+                  }
+                },
+                {
+                  "key": "runner.leg",
+                  "value": {
+                    "intValue": "2"
+                  }
+                },
+                {
+                  "key": "runner.team",
+                  "value": {
+                    "stringValue": "Team Alpha"
+                  }
+                },
+                {
+                  "key": "baton.received",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                },
+                {
+                  "key": "baton.passed",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750714267711445917",
+                  "name": "Spanley-runner-2 completed leg 2"
+                },
+                {
+                  "timeUnixNano": "1750714267711456000",
+                  "name": "Baton passed to Spanley-runner-3"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "1520ef4246254900",
+              "parentSpanId": "b477765af103c3f3",
+              "name": "Spandrew-runner-3-leg-3",
+              "kind": 1,
+              "startTimeUnixNano": "1750714267541000000",
+              "endTimeUnixNano": "1750714267832006709",
+              "attributes": [
+                {
+                  "key": "runner.name",
+                  "value": {
+                    "stringValue": "Spandrew-runner-3"
+                  }
+                },
+                {
+                  "key": "runner.leg",
+                  "value": {
+                    "intValue": "3"
+                  }
+                },
+                {
+                  "key": "runner.team",
+                  "value": {
+                    "stringValue": "Team Beta"
+                  }
+                },
+                {
+                  "key": "baton.received",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                },
+                {
+                  "key": "baton.passed",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750714267831965209",
+                  "name": "Spandrew-runner-3 completed leg 3"
+                },
+                {
+                  "timeUnixNano": "1750714267831980625",
+                  "name": "Baton passed to Spandrew-runner-4"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "445c27ad6738247a",
+              "parentSpanId": "788314692a813566",
+              "name": "Spandora-runner-4-leg-4",
+              "kind": 1,
+              "startTimeUnixNano": "1750714267466000000",
+              "endTimeUnixNano": "1750714268160596250",
+              "attributes": [
+                {
+                  "key": "runner.name",
+                  "value": {
+                    "stringValue": "Spandora-runner-4"
+                  }
+                },
+                {
+                  "key": "runner.leg",
+                  "value": {
+                    "intValue": "4"
+                  }
+                },
+                {
+                  "key": "runner.team",
+                  "value": {
+                    "stringValue": "Team Gamma"
+                  }
+                },
+                {
+                  "key": "baton.received",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                },
+                {
+                  "key": "race.finished",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750714268160526667",
+                  "name": "Spandora-runner-4 completed leg 4"
+                },
+                {
+                  "timeUnixNano": "1750714268160549917",
+                  "name": "Team Gamma finished the race!"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "788314692a813566",
+              "parentSpanId": "ff5ba05e29d20871",
+              "name": "relay-team-spandora",
+              "kind": 1,
+              "startTimeUnixNano": "1750714266292000000",
+              "endTimeUnixNano": "1750714268160406042",
+              "attributes": [
+                {
+                  "key": "team.name",
+                  "value": {
+                    "stringValue": "Team Gamma"
+                  }
+                },
+                {
+                  "key": "team.leader",
+                  "value": {
+                    "stringValue": "Spandora"
+                  }
+                },
+                {
+                  "key": "team.color",
+                  "value": {
+                    "stringValue": "green"
+                  }
+                },
+                {
+                  "key": "team.index",
+                  "value": {
+                    "intValue": "2"
+                  }
+                },
+                {
+                  "key": "race.total_time_ms",
+                  "value": {
+                    "intValue": "1863"
+                  }
+                },
+                {
+                  "key": "race.status",
+                  "value": {
+                    "stringValue": "completed"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750714268160401042",
+                  "name": "Team Gamma completed relay in 1863ms"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "0a6d47f7f221badd",
+              "parentSpanId": "b477765af103c3f3",
+              "name": "Spandrew-runner-4-leg-4",
+              "kind": 1,
+              "startTimeUnixNano": "1750714267832000000",
+              "endTimeUnixNano": "1750714268178877083",
+              "attributes": [
+                {
+                  "key": "runner.name",
+                  "value": {
+                    "stringValue": "Spandrew-runner-4"
+                  }
+                },
+                {
+                  "key": "runner.leg",
+                  "value": {
+                    "intValue": "4"
+                  }
+                },
+                {
+                  "key": "runner.team",
+                  "value": {
+                    "stringValue": "Team Beta"
+                  }
+                },
+                {
+                  "key": "baton.received",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                },
+                {
+                  "key": "race.finished",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750714268178849750",
+                  "name": "Spandrew-runner-4 completed leg 4"
+                },
+                {
+                  "timeUnixNano": "1750714268178860875",
+                  "name": "Team Beta finished the race!"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "b477765af103c3f3",
+              "parentSpanId": "ff5ba05e29d20871",
+              "name": "relay-team-spandrew",
+              "kind": 1,
+              "startTimeUnixNano": "1750714266292000000",
+              "endTimeUnixNano": "1750714268178927917",
+              "attributes": [
+                {
+                  "key": "team.name",
+                  "value": {
+                    "stringValue": "Team Beta"
+                  }
+                },
+                {
+                  "key": "team.leader",
+                  "value": {
+                    "stringValue": "Spandrew"
+                  }
+                },
+                {
+                  "key": "team.color",
+                  "value": {
+                    "stringValue": "red"
+                  }
+                },
+                {
+                  "key": "team.index",
+                  "value": {
+                    "intValue": "1"
+                  }
+                },
+                {
+                  "key": "race.total_time_ms",
+                  "value": {
+                    "intValue": "1884"
+                  }
+                },
+                {
+                  "key": "race.status",
+                  "value": {
+                    "stringValue": "completed"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750714268178923917",
+                  "name": "Team Beta completed relay in 1884ms"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "853289cb674e4f89",
+              "parentSpanId": "21c34dee15caee3b",
+              "name": "Spanley-runner-3-leg-3",
+              "kind": 1,
+              "startTimeUnixNano": "1750714267712000000",
+              "endTimeUnixNano": "1750714268265518458",
+              "attributes": [
+                {
+                  "key": "runner.name",
+                  "value": {
+                    "stringValue": "Spanley-runner-3"
+                  }
+                },
+                {
+                  "key": "runner.leg",
+                  "value": {
+                    "intValue": "3"
+                  }
+                },
+                {
+                  "key": "runner.team",
+                  "value": {
+                    "stringValue": "Team Alpha"
+                  }
+                },
+                {
+                  "key": "baton.received",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                },
+                {
+                  "key": "baton.passed",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750714268265475750",
+                  "name": "Spanley-runner-3 completed leg 3"
+                },
+                {
+                  "timeUnixNano": "1750714268265491458",
+                  "name": "Baton passed to Spanley-runner-4"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "1b6437ae425518ce",
+              "parentSpanId": "21c34dee15caee3b",
+              "name": "Spanley-runner-4-leg-4",
+              "kind": 1,
+              "startTimeUnixNano": "1750714268265000000",
+              "endTimeUnixNano": "1750714268576135625",
+              "attributes": [
+                {
+                  "key": "runner.name",
+                  "value": {
+                    "stringValue": "Spanley-runner-4"
+                  }
+                },
+                {
+                  "key": "runner.leg",
+                  "value": {
+                    "intValue": "4"
+                  }
+                },
+                {
+                  "key": "runner.team",
+                  "value": {
+                    "stringValue": "Team Alpha"
+                  }
+                },
+                {
+                  "key": "baton.received",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                },
+                {
+                  "key": "race.finished",
+                  "value": {
+                    "stringValue": "yes"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750714268576089041",
+                  "name": "Spanley-runner-4 completed leg 4"
+                },
+                {
+                  "timeUnixNano": "1750714268576114541",
+                  "name": "Team Alpha finished the race!"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "21c34dee15caee3b",
+              "parentSpanId": "ff5ba05e29d20871",
+              "name": "relay-team-spanley",
+              "kind": 1,
+              "startTimeUnixNano": "1750714266291000000",
+              "endTimeUnixNano": "1750714268576309833",
+              "attributes": [
+                {
+                  "key": "team.name",
+                  "value": {
+                    "stringValue": "Team Alpha"
+                  }
+                },
+                {
+                  "key": "team.leader",
+                  "value": {
+                    "stringValue": "Spanley"
+                  }
+                },
+                {
+                  "key": "team.color",
+                  "value": {
+                    "stringValue": "blue"
+                  }
+                },
+                {
+                  "key": "team.index",
+                  "value": {
+                    "intValue": "0"
+                  }
+                },
+                {
+                  "key": "race.total_time_ms",
+                  "value": {
+                    "intValue": "2283"
+                  }
+                },
+                {
+                  "key": "race.status",
+                  "value": {
+                    "stringValue": "completed"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750714268576306375",
+                  "name": "Team Alpha completed relay in 2283ms"
                 }
               ],
               "status": {}
@@ -149,24 +1173,24 @@
           },
           "spans": [
             {
-              "traceId": "b21b10fcb48e7e00d0c6a7aca1fae38b",
-              "spanId": "311a4680b3544a47",
-              "parentSpanId": "cafa61750684cd5a",
-              "name": "request handler - /hello",
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "ff5ba05e29d20871",
+              "parentSpanId": "6302fc8ac3b4cb26",
+              "name": "request handler - /relay-race",
               "kind": 1,
-              "startTimeUnixNano": "1750281560513000000",
-              "endTimeUnixNano": "1750281561518778708",
+              "startTimeUnixNano": "1750714266291000000",
+              "endTimeUnixNano": "1750714268582386625",
               "attributes": [
                 {
                   "key": "http.route",
                   "value": {
-                    "stringValue": "/hello"
+                    "stringValue": "/relay-race"
                   }
                 },
                 {
                   "key": "express.name",
                   "value": {
-                    "stringValue": "/hello"
+                    "stringValue": "/relay-race"
                   }
                 },
                 {
@@ -187,108 +1211,84 @@
           },
           "spans": [
             {
-              "traceId": "b21b10fcb48e7e00d0c6a7aca1fae38b",
-              "spanId": "cafa61750684cd5a",
+              "traceId": "9badba762f6f1aee3e3fbf15ee6f0ffe",
+              "spanId": "6302fc8ac3b4cb26",
               "parentSpanId": "",
-              "name": "GET /hello",
+              "name": "GET /relay-race",
               "kind": 2,
-              "startTimeUnixNano": "1750281560511000000",
-              "endTimeUnixNano": "1750281561519644041",
+              "startTimeUnixNano": "1750714266288000000",
+              "endTimeUnixNano": "1750714268582402084",
               "attributes": [
                 {
-                  "key": "http.url",
-                  "value": {
-                    "stringValue": "http://localhost:3000/hello"
-                  }
-                },
-                {
-                  "key": "http.host",
-                  "value": {
-                    "stringValue": "localhost:3000"
-                  }
-                },
-                {
-                  "key": "net.host.name",
-                  "value": {
-                    "stringValue": "localhost"
-                  }
-                },
-                {
-                  "key": "http.method",
+                  "key": "http.request.method",
                   "value": {
                     "stringValue": "GET"
                   }
                 },
                 {
-                  "key": "http.scheme",
+                  "key": "url.scheme",
                   "value": {
                     "stringValue": "http"
                   }
                 },
                 {
-                  "key": "http.target",
+                  "key": "server.address",
                   "value": {
-                    "stringValue": "/hello"
+                    "stringValue": "localhost"
                   }
                 },
                 {
-                  "key": "http.user_agent",
+                  "key": "network.peer.address",
                   "value": {
-                    "stringValue": "curl/8.7.1"
+                    "stringValue": "::1"
                   }
                 },
                 {
-                  "key": "http.flavor",
+                  "key": "network.peer.port",
+                  "value": {
+                    "intValue": "54380"
+                  }
+                },
+                {
+                  "key": "network.protocol.version",
                   "value": {
                     "stringValue": "1.1"
                   }
                 },
                 {
-                  "key": "net.transport",
+                  "key": "user_agent.original",
                   "value": {
-                    "stringValue": "ip_tcp"
+                    "stringValue": "curl/8.7.1"
                   }
                 },
                 {
-                  "key": "net.host.ip",
+                  "key": "url.path",
+                  "value": {
+                    "stringValue": "/relay-race"
+                  }
+                },
+                {
+                  "key": "client.address",
                   "value": {
                     "stringValue": "::1"
                   }
                 },
                 {
-                  "key": "net.host.port",
+                  "key": "server.port",
                   "value": {
                     "intValue": "3000"
                   }
                 },
                 {
-                  "key": "net.peer.ip",
-                  "value": {
-                    "stringValue": "::1"
-                  }
-                },
-                {
-                  "key": "net.peer.port",
-                  "value": {
-                    "intValue": "56777"
-                  }
-                },
-                {
-                  "key": "http.status_code",
+                  "key": "http.response.status_code",
                   "value": {
                     "intValue": "200"
                   }
                 },
                 {
-                  "key": "http.status_text",
-                  "value": {
-                    "stringValue": "OK"
-                  }
-                },
-                {
                   "key": "http.route",
                   "value": {
-                    "stringValue": "/hello"
+                    "stringValue": "/relay-race"
                   }
                 }
               ],

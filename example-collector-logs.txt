@@ -1,158 +1,555 @@
-2025-06-18 17: 19: 06.396 | 2025-06-18T21: 19: 06.396Z	info	service@v0.128.0/service.go: 199	Setting up own telemetry...	{
-  "resource": {
-    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
-    "service.name": "otelcol",
-    "service.version": "0.128.0"
-  }
-}
-2025-06-18 17: 19: 06.397 | 2025-06-18T21: 19: 06.396Z	info	builders/builders.go: 26	Development component. May change in the future.	{
-  "resource": {
-    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
-    "service.name": "otelcol",
-    "service.version": "0.128.0"
-  },
-  "otelcol.component.id": "debug",
-  "otelcol.component.kind": "exporter",
-  "otelcol.signal": "traces"
-}
-2025-06-18 17: 19: 06.397 | 2025-06-18T21: 19: 06.397Z	info	service@v0.128.0/service.go: 259	Starting otelcol...	{
-  "resource": {
-    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
-    "service.name": "otelcol",
-    "service.version": "0.128.0"
-  },
-  "Version": "0.128.0",
-  "NumCPU": 12
-}
-2025-06-18 17: 19: 06.397 | 2025-06-18T21: 19: 06.397Z	info	extensions/extensions.go: 41	Starting extensions...	{
-  "resource": {
-    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
-    "service.name": "otelcol",
-    "service.version": "0.128.0"
-  }
-}
-2025-06-18 17: 19: 06.398 | 2025-06-18T21: 19: 06.398Z	info	otlpreceiver@v0.128.0/otlp.go: 117	Starting GRPC server	{
-  "resource": {
-    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
-    "service.name": "otelcol",
-    "service.version": "0.128.0"
-  },
-  "otelcol.component.id": "otlp",
-  "otelcol.component.kind": "receiver",
-  "endpoint": "0.0.0.0:4317"
-}
-2025-06-18 17: 19: 06.398 | 2025-06-18T21: 19: 06.398Z	info	otlpreceiver@v0.128.0/otlp.go: 175	Starting HTTP server	{
-  "resource": {
-    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
-    "service.name": "otelcol",
-    "service.version": "0.128.0"
-  },
-  "otelcol.component.id": "otlp",
-  "otelcol.component.kind": "receiver",
-  "endpoint": "0.0.0.0:4318"
-}
-2025-06-18 17: 19: 06.398 | 2025-06-18T21: 19: 06.398Z	info	service@v0.128.0/service.go: 282	Everything is ready. Begin running and processing data.	{
-  "resource": {
-    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
-    "service.name": "otelcol",
-    "service.version": "0.128.0"
-  }
-}
-2025-06-18 17: 19: 26.714 | 2025-06-18T21: 19: 26.712Z	info	Traces	{
-  "resource": {
-    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
-    "service.name": "otelcol",
-    "service.version": "0.128.0"
-  },
-  "otelcol.component.id": "debug",
-  "otelcol.component.kind": "exporter",
-  "otelcol.signal": "traces",
-  "resource spans": 1,
-  "spans": 3
-}
-2025-06-18 17: 19: 26.717 | 2025-06-18T21: 19: 26.715Z	info	ResourceSpans #0
-2025-06-18 17: 19: 26.717 | Resource SchemaURL: 2025-06-18 17: 19: 26.717 | Resource attributes: 2025-06-18 17: 19: 26.717 |      -> service.name: Str(life-of-a-span)
-2025-06-18 17: 19: 26.717 |      -> host.name: Str(jamiedanielson)
-2025-06-18 17: 19: 26.717 |      -> host.arch: Str(arm64)
-2025-06-18 17: 19: 26.717 |      -> host.id: Str(79500692-6A8B-5982-9732-2FDB84D7E66E)
-2025-06-18 17: 19: 26.717 |      -> process.pid: Int(75646)
-2025-06-18 17: 19: 26.717 |      -> process.executable.name: Str(node)
-2025-06-18 17: 19: 26.717 |      -> process.executable.path: Str(/Users/jamiedanielson/.asdf/installs/nodejs/20.6.0/bin/node)
-2025-06-18 17: 19: 26.717 |      -> process.command_args: Slice([
-  "/Users/jamiedanielson/.asdf/installs/nodejs/20.6.0/bin/node",
-  "/Users/jamiedanielson/code/life-of-a-span/dist/index.js"
-])
-2025-06-18 17: 19: 26.717 |      -> process.runtime.version: Str(20.6.0)
-2025-06-18 17: 19: 26.717 |      -> process.runtime.name: Str(nodejs)
-2025-06-18 17: 19: 26.717 |      -> process.runtime.description: Str(Node.js)
-2025-06-18 17: 19: 26.717 |      -> process.command: Str(/Users/jamiedanielson/code/life-of-a-span/dist/index.js)
-2025-06-18 17: 19: 26.717 |      -> process.owner: Str(jamiedanielson)
-2025-06-18 17: 19: 26.717 |      -> telemetry.sdk.language: Str(nodejs)
-2025-06-18 17: 19: 26.717 |      -> telemetry.sdk.name: Str(opentelemetry)
-2025-06-18 17: 19: 26.717 |      -> telemetry.sdk.version: Str(2.0.0)
-2025-06-18 17: 19: 26.717 | ScopeSpans #0
-2025-06-18 17: 19: 26.717 | ScopeSpans SchemaURL: 2025-06-18 17: 19: 26.717 | InstrumentationScope spanley-tracer
-2025-06-18 17: 19: 26.717 | Span #0
-2025-06-18 17: 19: 26.717 |     Trace ID       : b21b10fcb48e7e00d0c6a7aca1fae38b
-2025-06-18 17: 19: 26.717 |     Parent ID      : 311a4680b3544a47
-2025-06-18 17: 19: 26.717 |     ID             : ca556a907c65a80a
-2025-06-18 17: 19: 26.717 |     Name           : spanley-picking-up-clues
-2025-06-18 17: 19: 26.717 |     Kind           : Internal
-2025-06-18 17: 19: 26.717 |     Start time     : 2025-06-18 21: 19: 20.514 +0000 UTC
-2025-06-18 17: 19: 26.717 |     End time       : 2025-06-18 21: 19: 21.518824 +0000 UTC
-2025-06-18 17: 19: 26.717 |     Status code    : Unset
-2025-06-18 17: 19: 26.717 |     Status message : 2025-06-18 17: 19: 26.717 | Attributes: 2025-06-18 17: 19: 26.717 |      -> app.distraction: Str(squirrel)
-2025-06-18 17: 19: 26.717 | Events: 2025-06-18 17: 19: 26.717 | SpanEvent #0
-2025-06-18 17: 19: 26.717 |      -> Name: spanley saw a squirrel
-2025-06-18 17: 19: 26.717 |      -> Timestamp: 2025-06-18 21: 19: 21.515300292 +0000 UTC
-2025-06-18 17: 19: 26.717 |      -> DroppedAttributesCount: 0
-2025-06-18 17: 19: 26.717 | ScopeSpans #1
-2025-06-18 17: 19: 26.717 | ScopeSpans SchemaURL: 2025-06-18 17: 19: 26.717 | InstrumentationScope @opentelemetry/instrumentation-express 0.49.0
-2025-06-18 17: 19: 26.717 | Span #0
-2025-06-18 17: 19: 26.717 |     Trace ID       : b21b10fcb48e7e00d0c6a7aca1fae38b
-2025-06-18 17: 19: 26.717 |     Parent ID      : cafa61750684cd5a
-2025-06-18 17: 19: 26.717 |     ID             : 311a4680b3544a47
-2025-06-18 17: 19: 26.717 |     Name           : request handler - /hello
-2025-06-18 17: 19: 26.717 |     Kind           : Internal
-2025-06-18 17: 19: 26.717 |     Start time     : 2025-06-18 21: 19: 20.513 +0000 UTC
-2025-06-18 17: 19: 26.717 |     End time       : 2025-06-18 21: 19: 21.518778708 +0000 UTC
-2025-06-18 17: 19: 26.717 |     Status code    : Unset
-2025-06-18 17: 19: 26.717 |     Status message : 2025-06-18 17: 19: 26.717 | Attributes: 2025-06-18 17: 19: 26.717 |      -> http.route: Str(/hello)
-2025-06-18 17: 19: 26.717 |      -> express.name: Str(/hello)
-2025-06-18 17: 19: 26.717 |      -> express.type: Str(request_handler)
-2025-06-18 17: 19: 26.717 | ScopeSpans #2
-2025-06-18 17: 19: 26.717 | ScopeSpans SchemaURL: 2025-06-18 17: 19: 26.717 | InstrumentationScope @opentelemetry/instrumentation-http 0.200.0
-2025-06-18 17: 19: 26.717 | Span #0
-2025-06-18 17: 19: 26.717 |     Trace ID       : b21b10fcb48e7e00d0c6a7aca1fae38b
-2025-06-18 17: 19: 26.717 |     Parent ID      : 2025-06-18 17: 19: 26.717 |     ID             : cafa61750684cd5a
-2025-06-18 17: 19: 26.717 |     Name           : GET /hello
-2025-06-18 17: 19: 26.717 |     Kind           : Server
-2025-06-18 17: 19: 26.717 |     Start time     : 2025-06-18 21: 19: 20.511 +0000 UTC
-2025-06-18 17: 19: 26.717 |     End time       : 2025-06-18 21: 19: 21.519644041 +0000 UTC
-2025-06-18 17: 19: 26.717 |     Status code    : Unset
-2025-06-18 17: 19: 26.717 |     Status message : 2025-06-18 17: 19: 26.717 | Attributes: 2025-06-18 17: 19: 26.717 |      -> http.url: Str(http: //localhost:3000/hello)
-2025-06-18 17: 19: 26.717 |      -> http.host: Str(localhost: 3000)
-2025-06-18 17: 19: 26.717 |      -> net.host.name: Str(localhost)
-2025-06-18 17: 19: 26.717 |      -> http.method: Str(GET)
-2025-06-18 17: 19: 26.717 |      -> http.scheme: Str(http)
-2025-06-18 17: 19: 26.717 |      -> http.target: Str(/hello)
-2025-06-18 17: 19: 26.717 |      -> http.user_agent: Str(curl/8.7.1)
-2025-06-18 17: 19: 26.717 |      -> http.flavor: Str(1.1)
-2025-06-18 17: 19: 26.717 |      -> net.transport: Str(ip_tcp)
-2025-06-18 17: 19: 26.717 |      -> net.host.ip: Str(: : 1)
-2025-06-18 17: 19: 26.717 |      -> net.host.port: Int(3000)
-2025-06-18 17: 19: 26.717 |      -> net.peer.ip: Str(: : 1)
-2025-06-18 17: 19: 26.717 |      -> net.peer.port: Int(56777)
-2025-06-18 17: 19: 26.717 |      -> http.status_code: Int(200)
-2025-06-18 17: 19: 26.717 |      -> http.status_text: Str(OK)
-2025-06-18 17: 19: 26.717 |      -> http.route: Str(/hello)
-2025-06-18 17: 19: 26.718 | 	{
-  "resource": {
-    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
-    "service.name": "otelcol",
-    "service.version": "0.128.0"
-  },
-  "otelcol.component.id": "debug",
-  "otelcol.component.kind": "exporter",
-  "otelcol.signal": "traces"
-}
+2025-06-23 17:31:11.723 | 2025-06-23T21:31:11.722Z	info	Traces	{"resource": {"service.instance.id": "2ab25efb-01b7-4b06-ada6-ad677ef697ea", "service.name": "otelcol", "service.version": "0.128.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 22}
+2025-06-23 17:31:11.727 | 2025-06-23T21:31:11.725Z	info	ResourceSpans #0
+2025-06-23 17:31:11.727 | Resource SchemaURL:
+2025-06-23 17:31:11.727 | Resource attributes:
+2025-06-23 17:31:11.727 |      -> service.name: Str(life-of-a-span)
+2025-06-23 17:31:11.727 |      -> host.name: Str(jamiedanielson)
+2025-06-23 17:31:11.727 |      -> host.arch: Str(arm64)
+2025-06-23 17:31:11.727 |      -> host.id: Str(79500692-6A8B-5982-9732-2FDB84D7E66E)
+2025-06-23 17:31:11.727 |      -> process.pid: Int(27911)
+2025-06-23 17:31:11.727 |      -> process.executable.name: Str(node)
+2025-06-23 17:31:11.727 |      -> process.executable.path: Str(/Users/jamiedanielson/.asdf/installs/nodejs/20.6.0/bin/node)
+2025-06-23 17:31:11.727 |      -> process.command_args: Slice(["/Users/jamiedanielson/.asdf/installs/nodejs/20.6.0/bin/node","/Users/jamiedanielson/code/life-of-a-span/dist/index.js"])
+2025-06-23 17:31:11.727 |      -> process.runtime.version: Str(20.6.0)
+2025-06-23 17:31:11.727 |      -> process.runtime.name: Str(nodejs)
+2025-06-23 17:31:11.727 |      -> process.runtime.description: Str(Node.js)
+2025-06-23 17:31:11.727 |      -> process.command: Str(/Users/jamiedanielson/code/life-of-a-span/dist/index.js)
+2025-06-23 17:31:11.727 |      -> process.owner: Str(jamiedanielson)
+2025-06-23 17:31:11.727 |      -> telemetry.sdk.language: Str(nodejs)
+2025-06-23 17:31:11.727 |      -> telemetry.sdk.name: Str(opentelemetry)
+2025-06-23 17:31:11.727 |      -> telemetry.sdk.version: Str(2.0.0)
+2025-06-23 17:31:11.727 | ScopeSpans #0
+2025-06-23 17:31:11.727 | ScopeSpans SchemaURL:
+2025-06-23 17:31:11.727 | InstrumentationScope relay-race-tracer
+2025-06-23 17:31:11.727 | Span #0
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : 788314692a813566
+2025-06-23 17:31:11.727 |     ID             : 8ee63db91914497a
+2025-06-23 17:31:11.727 |     Name           : Spandora-runner-1-leg-1
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:06.292 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:06.541579458 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> runner.name: Str(Spandora-runner-1)
+2025-06-23 17:31:11.727 |      -> runner.leg: Int(1)
+2025-06-23 17:31:11.727 |      -> runner.team: Str(Team Gamma)
+2025-06-23 17:31:11.727 |      -> baton.received: Str(starting)
+2025-06-23 17:31:11.727 |      -> baton.passed: Str(yes)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Spandora-runner-1 completed leg 1
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:06.541380416 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | SpanEvent #1
+2025-06-23 17:31:11.727 |      -> Name: Baton passed to Spandora-runner-2
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:06.541470416 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | Span #1
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : 9cfa7d22ce4f628c
+2025-06-23 17:31:11.727 |     ID             : 7ffcc25a9485944a
+2025-06-23 17:31:11.727 |     Name           : Spannika-runner-1-leg-1
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:06.292 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:06.569533916 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> runner.name: Str(Spannika-runner-1)
+2025-06-23 17:31:11.727 |      -> runner.leg: Int(1)
+2025-06-23 17:31:11.727 |      -> runner.team: Str(Team Delta)
+2025-06-23 17:31:11.727 |      -> baton.received: Str(starting)
+2025-06-23 17:31:11.727 |      -> baton.passed: Str(yes)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Spannika-runner-1 completed leg 1
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:06.569467458 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | SpanEvent #1
+2025-06-23 17:31:11.727 |      -> Name: Baton passed to Spannika-runner-2
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:06.569512541 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | Span #2
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : 788314692a813566
+2025-06-23 17:31:11.727 |     ID             : c4650ae3305eebaa
+2025-06-23 17:31:11.727 |     Name           : Spandora-runner-2-leg-2
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:06.542 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:06.882671125 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> runner.name: Str(Spandora-runner-2)
+2025-06-23 17:31:11.727 |      -> runner.leg: Int(2)
+2025-06-23 17:31:11.727 |      -> runner.team: Str(Team Gamma)
+2025-06-23 17:31:11.727 |      -> baton.received: Str(yes)
+2025-06-23 17:31:11.727 |      -> baton.passed: Str(yes)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Spandora-runner-2 completed leg 2
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:06.88259175 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | SpanEvent #1
+2025-06-23 17:31:11.727 |      -> Name: Baton passed to Spandora-runner-3
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:06.882624375 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | Span #3
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : 21c34dee15caee3b
+2025-06-23 17:31:11.727 |     ID             : 3984f01b25d1b213
+2025-06-23 17:31:11.727 |     Name           : Spanley-runner-1-leg-1
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:06.291 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:06.933367166 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> runner.name: Str(Spanley-runner-1)
+2025-06-23 17:31:11.727 |      -> runner.leg: Int(1)
+2025-06-23 17:31:11.727 |      -> runner.team: Str(Team Alpha)
+2025-06-23 17:31:11.727 |      -> baton.received: Str(starting)
+2025-06-23 17:31:11.727 |      -> baton.passed: Str(yes)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Spanley-runner-1 completed leg 1
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:06.933299916 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | SpanEvent #1
+2025-06-23 17:31:11.727 |      -> Name: Baton passed to Spanley-runner-2
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:06.93332425 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | Span #4
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : b477765af103c3f3
+2025-06-23 17:31:11.727 |     ID             : 80f7dd8bad0f0db9
+2025-06-23 17:31:11.727 |     Name           : Spandrew-runner-1-leg-1
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:06.292 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:07.019131709 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> runner.name: Str(Spandrew-runner-1)
+2025-06-23 17:31:11.727 |      -> runner.leg: Int(1)
+2025-06-23 17:31:11.727 |      -> runner.team: Str(Team Beta)
+2025-06-23 17:31:11.727 |      -> baton.received: Str(starting)
+2025-06-23 17:31:11.727 |      -> baton.passed: Str(yes)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Spandrew-runner-1 completed leg 1
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:07.019063334 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | SpanEvent #1
+2025-06-23 17:31:11.727 |      -> Name: Baton passed to Spandrew-runner-2
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:07.019108625 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | Span #5
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : 9cfa7d22ce4f628c
+2025-06-23 17:31:11.727 |     ID             : b7561d79ddf95aa2
+2025-06-23 17:31:11.727 |     Name           : Spannika-runner-2-leg-2
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:06.57 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:07.211298625 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> runner.name: Str(Spannika-runner-2)
+2025-06-23 17:31:11.727 |      -> runner.leg: Int(2)
+2025-06-23 17:31:11.727 |      -> runner.team: Str(Team Delta)
+2025-06-23 17:31:11.727 |      -> baton.received: Str(yes)
+2025-06-23 17:31:11.727 |      -> baton.passed: Str(yes)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Spannika-runner-2 completed leg 2
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:07.211242375 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | SpanEvent #1
+2025-06-23 17:31:11.727 |      -> Name: Baton passed to Spannika-runner-3
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:07.211263584 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | Span #6
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : 9cfa7d22ce4f628c
+2025-06-23 17:31:11.727 |     ID             : 512bdeb219ffbd83
+2025-06-23 17:31:11.727 |     Name           : Spannika-runner-3-leg-3
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:07.212 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:07.423267083 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> runner.name: Str(Spannika-runner-3)
+2025-06-23 17:31:11.727 |      -> runner.leg: Int(3)
+2025-06-23 17:31:11.727 |      -> runner.team: Str(Team Delta)
+2025-06-23 17:31:11.727 |      -> baton.received: Str(yes)
+2025-06-23 17:31:11.727 |      -> baton.passed: Str(yes)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Spannika-runner-3 completed leg 3
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:07.423101083 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | SpanEvent #1
+2025-06-23 17:31:11.727 |      -> Name: Baton passed to Spannika-runner-4
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:07.42324725 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | Span #7
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : 788314692a813566
+2025-06-23 17:31:11.727 |     ID             : e469790410154c9f
+2025-06-23 17:31:11.727 |     Name           : Spandora-runner-3-leg-3
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:06.883 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:07.465513416 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> runner.name: Str(Spandora-runner-3)
+2025-06-23 17:31:11.727 |      -> runner.leg: Int(3)
+2025-06-23 17:31:11.727 |      -> runner.team: Str(Team Gamma)
+2025-06-23 17:31:11.727 |      -> baton.received: Str(yes)
+2025-06-23 17:31:11.727 |      -> baton.passed: Str(yes)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Spandora-runner-3 completed leg 3
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:07.465481833 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | SpanEvent #1
+2025-06-23 17:31:11.727 |      -> Name: Baton passed to Spandora-runner-4
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:07.465491375 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | Span #8
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : b477765af103c3f3
+2025-06-23 17:31:11.727 |     ID             : 297254d6817ed8bd
+2025-06-23 17:31:11.727 |     Name           : Spandrew-runner-2-leg-2
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:07.019 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:07.540294167 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> runner.name: Str(Spandrew-runner-2)
+2025-06-23 17:31:11.727 |      -> runner.leg: Int(2)
+2025-06-23 17:31:11.727 |      -> runner.team: Str(Team Beta)
+2025-06-23 17:31:11.727 |      -> baton.received: Str(yes)
+2025-06-23 17:31:11.727 |      -> baton.passed: Str(yes)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Spandrew-runner-2 completed leg 2
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:07.540238292 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | SpanEvent #1
+2025-06-23 17:31:11.727 |      -> Name: Baton passed to Spandrew-runner-3
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:07.540259917 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | Span #9
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : 9cfa7d22ce4f628c
+2025-06-23 17:31:11.727 |     ID             : 9676ad168cfa3e3c
+2025-06-23 17:31:11.727 |     Name           : Spannika-runner-4-leg-4
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:07.423 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:07.694059541 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> runner.name: Str(Spannika-runner-4)
+2025-06-23 17:31:11.727 |      -> runner.leg: Int(4)
+2025-06-23 17:31:11.727 |      -> runner.team: Str(Team Delta)
+2025-06-23 17:31:11.727 |      -> baton.received: Str(yes)
+2025-06-23 17:31:11.727 |      -> race.finished: Str(yes)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Spannika-runner-4 completed leg 4
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:07.693993125 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | SpanEvent #1
+2025-06-23 17:31:11.727 |      -> Name: Team Delta finished the race!
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:07.694014166 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | Span #10
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : ff5ba05e29d20871
+2025-06-23 17:31:11.727 |     ID             : 9cfa7d22ce4f628c
+2025-06-23 17:31:11.727 |     Name           : relay-team-spannika
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:06.292 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:07.693904834 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> team.name: Str(Team Delta)
+2025-06-23 17:31:11.727 |      -> team.leader: Str(Spannika)
+2025-06-23 17:31:11.727 |      -> team.color: Str(yellow)
+2025-06-23 17:31:11.727 |      -> team.index: Int(3)
+2025-06-23 17:31:11.727 |      -> race.total_time_ms: Int(1399)
+2025-06-23 17:31:11.727 |      -> race.status: Str(completed)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Team Delta completed relay in 1399ms
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:07.693898875 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | Span #11
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : 21c34dee15caee3b
+2025-06-23 17:31:11.727 |     ID             : 1bb7d551b4ea1c18
+2025-06-23 17:31:11.727 |     Name           : Spanley-runner-2-leg-2
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:06.934 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:07.711490625 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> runner.name: Str(Spanley-runner-2)
+2025-06-23 17:31:11.727 |      -> runner.leg: Int(2)
+2025-06-23 17:31:11.727 |      -> runner.team: Str(Team Alpha)
+2025-06-23 17:31:11.727 |      -> baton.received: Str(yes)
+2025-06-23 17:31:11.727 |      -> baton.passed: Str(yes)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Spanley-runner-2 completed leg 2
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:07.711445917 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | SpanEvent #1
+2025-06-23 17:31:11.727 |      -> Name: Baton passed to Spanley-runner-3
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:07.711456 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | Span #12
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : b477765af103c3f3
+2025-06-23 17:31:11.727 |     ID             : 1520ef4246254900
+2025-06-23 17:31:11.727 |     Name           : Spandrew-runner-3-leg-3
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:07.541 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:07.832006709 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> runner.name: Str(Spandrew-runner-3)
+2025-06-23 17:31:11.727 |      -> runner.leg: Int(3)
+2025-06-23 17:31:11.727 |      -> runner.team: Str(Team Beta)
+2025-06-23 17:31:11.727 |      -> baton.received: Str(yes)
+2025-06-23 17:31:11.727 |      -> baton.passed: Str(yes)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Spandrew-runner-3 completed leg 3
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:07.831965209 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | SpanEvent #1
+2025-06-23 17:31:11.727 |      -> Name: Baton passed to Spandrew-runner-4
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:07.831980625 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | Span #13
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : 788314692a813566
+2025-06-23 17:31:11.727 |     ID             : 445c27ad6738247a
+2025-06-23 17:31:11.727 |     Name           : Spandora-runner-4-leg-4
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:07.466 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:08.16059625 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> runner.name: Str(Spandora-runner-4)
+2025-06-23 17:31:11.727 |      -> runner.leg: Int(4)
+2025-06-23 17:31:11.727 |      -> runner.team: Str(Team Gamma)
+2025-06-23 17:31:11.727 |      -> baton.received: Str(yes)
+2025-06-23 17:31:11.727 |      -> race.finished: Str(yes)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Spandora-runner-4 completed leg 4
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:08.160526667 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | SpanEvent #1
+2025-06-23 17:31:11.727 |      -> Name: Team Gamma finished the race!
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:08.160549917 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | Span #14
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : ff5ba05e29d20871
+2025-06-23 17:31:11.727 |     ID             : 788314692a813566
+2025-06-23 17:31:11.727 |     Name           : relay-team-spandora
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:06.292 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:08.160406042 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> team.name: Str(Team Gamma)
+2025-06-23 17:31:11.727 |      -> team.leader: Str(Spandora)
+2025-06-23 17:31:11.727 |      -> team.color: Str(green)
+2025-06-23 17:31:11.727 |      -> team.index: Int(2)
+2025-06-23 17:31:11.727 |      -> race.total_time_ms: Int(1863)
+2025-06-23 17:31:11.727 |      -> race.status: Str(completed)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Team Gamma completed relay in 1863ms
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:08.160401042 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | Span #15
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : b477765af103c3f3
+2025-06-23 17:31:11.727 |     ID             : 0a6d47f7f221badd
+2025-06-23 17:31:11.727 |     Name           : Spandrew-runner-4-leg-4
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:07.832 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:08.178877083 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> runner.name: Str(Spandrew-runner-4)
+2025-06-23 17:31:11.727 |      -> runner.leg: Int(4)
+2025-06-23 17:31:11.727 |      -> runner.team: Str(Team Beta)
+2025-06-23 17:31:11.727 |      -> baton.received: Str(yes)
+2025-06-23 17:31:11.727 |      -> race.finished: Str(yes)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Spandrew-runner-4 completed leg 4
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:08.17884975 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | SpanEvent #1
+2025-06-23 17:31:11.727 |      -> Name: Team Beta finished the race!
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:08.178860875 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | Span #16
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : ff5ba05e29d20871
+2025-06-23 17:31:11.727 |     ID             : b477765af103c3f3
+2025-06-23 17:31:11.727 |     Name           : relay-team-spandrew
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:06.292 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:08.178927917 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> team.name: Str(Team Beta)
+2025-06-23 17:31:11.727 |      -> team.leader: Str(Spandrew)
+2025-06-23 17:31:11.727 |      -> team.color: Str(red)
+2025-06-23 17:31:11.727 |      -> team.index: Int(1)
+2025-06-23 17:31:11.727 |      -> race.total_time_ms: Int(1884)
+2025-06-23 17:31:11.727 |      -> race.status: Str(completed)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Team Beta completed relay in 1884ms
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:08.178923917 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | Span #17
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : 21c34dee15caee3b
+2025-06-23 17:31:11.727 |     ID             : 853289cb674e4f89
+2025-06-23 17:31:11.727 |     Name           : Spanley-runner-3-leg-3
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:07.712 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:08.265518458 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> runner.name: Str(Spanley-runner-3)
+2025-06-23 17:31:11.727 |      -> runner.leg: Int(3)
+2025-06-23 17:31:11.727 |      -> runner.team: Str(Team Alpha)
+2025-06-23 17:31:11.727 |      -> baton.received: Str(yes)
+2025-06-23 17:31:11.727 |      -> baton.passed: Str(yes)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Spanley-runner-3 completed leg 3
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:08.26547575 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | SpanEvent #1
+2025-06-23 17:31:11.727 |      -> Name: Baton passed to Spanley-runner-4
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:08.265491458 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | Span #18
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : 21c34dee15caee3b
+2025-06-23 17:31:11.727 |     ID             : 1b6437ae425518ce
+2025-06-23 17:31:11.727 |     Name           : Spanley-runner-4-leg-4
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:08.265 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:08.576135625 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> runner.name: Str(Spanley-runner-4)
+2025-06-23 17:31:11.727 |      -> runner.leg: Int(4)
+2025-06-23 17:31:11.727 |      -> runner.team: Str(Team Alpha)
+2025-06-23 17:31:11.727 |      -> baton.received: Str(yes)
+2025-06-23 17:31:11.727 |      -> race.finished: Str(yes)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Spanley-runner-4 completed leg 4
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:08.576089041 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | SpanEvent #1
+2025-06-23 17:31:11.727 |      -> Name: Team Alpha finished the race!
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:08.576114541 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | Span #19
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : ff5ba05e29d20871
+2025-06-23 17:31:11.727 |     ID             : 21c34dee15caee3b
+2025-06-23 17:31:11.727 |     Name           : relay-team-spanley
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:06.291 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:08.576309833 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> team.name: Str(Team Alpha)
+2025-06-23 17:31:11.727 |      -> team.leader: Str(Spanley)
+2025-06-23 17:31:11.727 |      -> team.color: Str(blue)
+2025-06-23 17:31:11.727 |      -> team.index: Int(0)
+2025-06-23 17:31:11.727 |      -> race.total_time_ms: Int(2283)
+2025-06-23 17:31:11.727 |      -> race.status: Str(completed)
+2025-06-23 17:31:11.727 | Events:
+2025-06-23 17:31:11.727 | SpanEvent #0
+2025-06-23 17:31:11.727 |      -> Name: Team Alpha completed relay in 2283ms
+2025-06-23 17:31:11.727 |      -> Timestamp: 2025-06-23 21:31:08.576306375 +0000 UTC
+2025-06-23 17:31:11.727 |      -> DroppedAttributesCount: 0
+2025-06-23 17:31:11.727 | ScopeSpans #1
+2025-06-23 17:31:11.727 | ScopeSpans SchemaURL:
+2025-06-23 17:31:11.727 | InstrumentationScope @opentelemetry/instrumentation-express 0.49.0
+2025-06-23 17:31:11.727 | Span #0
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      : 6302fc8ac3b4cb26
+2025-06-23 17:31:11.727 |     ID             : ff5ba05e29d20871
+2025-06-23 17:31:11.727 |     Name           : request handler - /relay-race
+2025-06-23 17:31:11.727 |     Kind           : Internal
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:06.291 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:08.582386625 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> http.route: Str(/relay-race)
+2025-06-23 17:31:11.727 |      -> express.name: Str(/relay-race)
+2025-06-23 17:31:11.727 |      -> express.type: Str(request_handler)
+2025-06-23 17:31:11.727 | ScopeSpans #2
+2025-06-23 17:31:11.727 | ScopeSpans SchemaURL:
+2025-06-23 17:31:11.727 | InstrumentationScope @opentelemetry/instrumentation-http 0.200.0
+2025-06-23 17:31:11.727 | Span #0
+2025-06-23 17:31:11.727 |     Trace ID       : 9badba762f6f1aee3e3fbf15ee6f0ffe
+2025-06-23 17:31:11.727 |     Parent ID      :
+2025-06-23 17:31:11.727 |     ID             : 6302fc8ac3b4cb26
+2025-06-23 17:31:11.727 |     Name           : GET /relay-race
+2025-06-23 17:31:11.727 |     Kind           : Server
+2025-06-23 17:31:11.727 |     Start time     : 2025-06-23 21:31:06.288 +0000 UTC
+2025-06-23 17:31:11.727 |     End time       : 2025-06-23 21:31:08.582402084 +0000 UTC
+2025-06-23 17:31:11.727 |     Status code    : Unset
+2025-06-23 17:31:11.727 |     Status message :
+2025-06-23 17:31:11.727 | Attributes:
+2025-06-23 17:31:11.727 |      -> http.request.method: Str(GET)
+2025-06-23 17:31:11.727 |      -> url.scheme: Str(http)
+2025-06-23 17:31:11.727 |      -> server.address: Str(localhost)
+2025-06-23 17:31:11.727 |      -> network.peer.address: Str(::1)
+2025-06-23 17:31:11.727 |      -> network.peer.port: Int(54380)
+2025-06-23 17:31:11.727 |      -> network.protocol.version: Str(1.1)
+2025-06-23 17:31:11.727 |      -> user_agent.original: Str(curl/8.7.1)
+2025-06-23 17:31:11.727 |      -> url.path: Str(/relay-race)
+2025-06-23 17:31:11.727 |      -> client.address: Str(::1)
+2025-06-23 17:31:11.727 |      -> server.port: Int(3000)
+2025-06-23 17:31:11.727 |      -> http.response.status_code: Int(200)
+2025-06-23 17:31:11.727 |      -> http.route: Str(/relay-race)
+2025-06-23 17:31:11.727 | 	{"resource": {"service.instance.id": "2ab25efb-01b7-4b06-ada6-ad677ef697ea", "service.name": "otelcol", "service.version": "0.128.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}

@@ -38,6 +38,8 @@ The NodeSDK is initialized in `tracing.ts`, which is imported into `index.ts`.
 The app is using the default setup for NodeSDK, which is an OTLP Traces Exporter with http/protobuf protocol and a BatchSpanProcessor, sending to `http://localhost:4318/v1/traces` where the collector is listening and receiving telemetry.
 
 ```sh
+# generate stable http semconv
+export OTEL_SEMCONV_STABILITY_OPT_IN="http"
 # start the app
 npm start
 ```
@@ -55,7 +57,8 @@ The traces are sent to the Collector where it exports to three places:
 - `data.json` file
 - Collector logs
 
-![trace waterfall in Honeycomb](./quick-waterfall-spans.png)
+![full trace waterfall in Honeycomb](./full-waterfall-relay-race.png)
+![waterfall broken down by team](./waterfall-relay-race-by-team.png)
 
 ## Teardown
 
@@ -76,9 +79,13 @@ If running in Docker is not possible or not preferred, another option is just to
 Set environment variables to send to Honeycomb (if desired), or enable diagnostic logging in `tracing.ts` or via environment variable to view in console (along with other debugging logs).
 
 ```sh
+# set Honeycomb API Key
+export HONEYCOMB_API_KEY="mykey"
+# generate stable http semconv
+export OTEL_SEMCONV_STABILITY_OPT_IN="http"
 # for default OTLP Exporter
 export OTEL_EXPORTER_OTLP_ENDPOINT="https://api.honeycomb.io:443" # US instance
-export OTEL_EXPORTER_OTLP_HEADERS="x-honeycomb-team=your-api-key"
+export OTEL_EXPORTER_OTLP_HEADERS="x-honeycomb-team=${HONEYCOMB_API_KEY}"
 
 # for debugging logs and console exporter
 export OTEL_LOG_LEVEL=debug
