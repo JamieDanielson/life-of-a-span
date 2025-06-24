@@ -1,5 +1,6 @@
 import { NodeSDK } from '@opentelemetry/sdk-node';
 import { getNodeAutoInstrumentations } from '@opentelemetry/auto-instrumentations-node';
+import { resourceFromAttributes } from '@opentelemetry/resources';
 // import { diag, DiagConsoleLogger, DiagLogLevel } from '@opentelemetry/api';
 
 // for debugging purposes, set the diagnostic logger
@@ -12,6 +13,9 @@ import { getNodeAutoInstrumentations } from '@opentelemetry/auto-instrumentation
 // with a BatchSpanProcessor
 // with an endpoint of http://localhost:4318/v1/traces
 const sdk = new NodeSDK({
+    resource: resourceFromAttributes({
+        [ "birth.location" ]: "Observabilitown",
+    }),
     serviceName: 'life-of-a-span',
     instrumentations: [getNodeAutoInstrumentations()],
 });
