@@ -42,12 +42,8 @@ The app is using the default setup for NodeSDK, which is an OTLP Traces Exporter
 npm start
 ```
 
-When the app is started, open a new terminal and hit the endpoint to generate telemetry.
-
-```sh
-# in a separate terminal, hit the endpoint
-curl localhost:3000/hello
-```
+When the app is started, open a browser window and navigate to the endpoint <http://localhost:3000> to get started.
+It will tell you to click or otherwise navigate to <http://localhost:3000/spanley> to generate telemetry.
 
 The traces are sent to the Collector where it exports to three places:
 
@@ -55,7 +51,7 @@ The traces are sent to the Collector where it exports to three places:
 - `data.json` file
 - Collector logs
 
-![trace waterfall in Honeycomb](./quick-waterfall-spans.png)
+![spanley life journey trace waterfall in Honeycomb](./spanley-life-journey-waterfall.png)
 
 ## Teardown
 

@@ -30,7 +30,7 @@
           {
             "key": "process.pid",
             "value": {
-              "intValue": "75646"
+              "intValue": "53165"
             }
           },
           {
@@ -91,21 +91,9 @@
             }
           },
           {
-            "key": "telemetry.sdk.language",
+            "key": "birth.location",
             "value": {
-              "stringValue": "nodejs"
-            }
-          },
-          {
-            "key": "telemetry.sdk.name",
-            "value": {
-              "stringValue": "opentelemetry"
-            }
-          },
-          {
-            "key": "telemetry.sdk.version",
-            "value": {
-              "stringValue": "2.0.0"
+              "stringValue": "Observabilitown"
             }
           }
         ]
@@ -117,25 +105,308 @@
           },
           "spans": [
             {
-              "traceId": "b21b10fcb48e7e00d0c6a7aca1fae38b",
-              "spanId": "ca556a907c65a80a",
-              "parentSpanId": "311a4680b3544a47",
-              "name": "spanley-picking-up-clues",
+              "traceId": "54137b4f43cd4e1a5898fc9ef0a711d7",
+              "spanId": "53b32a69e59c0d00",
+              "parentSpanId": "5173258e36225d9e",
+              "name": "spanley-birth-phase",
               "kind": 1,
-              "startTimeUnixNano": "1750281560514000000",
-              "endTimeUnixNano": "1750281561518824000",
+              "startTimeUnixNano": "1750737117622000000",
+              "endTimeUnixNano": "1750737117823191500",
               "attributes": [
                 {
-                  "key": "app.distraction",
+                  "key": "spanley.birth.location",
                   "value": {
-                    "stringValue": "squirrel"
+                    "stringValue": "code"
+                  }
+                },
+                {
+                  "key": "spanley.purpose",
+                  "value": {
+                    "stringValue": "observability"
+                  }
+                },
+                {
+                  "key": "journey.phase",
+                  "value": {
+                    "stringValue": "birth"
                   }
                 }
               ],
               "events": [
                 {
-                  "timeUnixNano": "1750281561515300292",
-                  "name": "spanley saw a squirrel"
+                  "timeUnixNano": "1750737117622104583",
+                  "name": "Spanley is born!"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "54137b4f43cd4e1a5898fc9ef0a711d7",
+              "spanId": "0f62bcca085b3a67",
+              "parentSpanId": "5ebb05d134ead11f",
+              "name": "spanley-learning-skills",
+              "kind": 1,
+              "startTimeUnixNano": "1750737118125000000",
+              "endTimeUnixNano": "1750737118326556875",
+              "attributes": [
+                {
+                  "key": "skill.type",
+                  "value": {
+                    "stringValue": "attributes"
+                  }
+                },
+                {
+                  "key": "skill.level",
+                  "value": {
+                    "stringValue": "intermediate"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750737118125571792",
+                  "name": "Spanley learned about attributes"
+                },
+                {
+                  "timeUnixNano": "1750737118326089833",
+                  "name": "Spanley attempts error handling"
+                },
+                {
+                  "timeUnixNano": "1750737118326453375",
+                  "name": "exception",
+                  "attributes": [
+                    {
+                      "key": "exception.type",
+                      "value": {
+                        "stringValue": "Error"
+                      }
+                    },
+                    {
+                      "key": "exception.message",
+                      "value": {
+                        "stringValue": "Controlled learning error"
+                      }
+                    },
+                    {
+                      "key": "exception.stacktrace",
+                      "value": {
+                        "stringValue": "Error: Controlled learning error\n    at /Users/jamiedanielson/code/life-of-a-span/dist/index.js:60:31\n    at async /Users/jamiedanielson/code/life-of-a-span/dist/index.js:50:17\n    at async /Users/jamiedanielson/code/life-of-a-span/dist/index.js:42:13\n    at async /Users/jamiedanielson/code/life-of-a-span/dist/index.js:29:5"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "status": {
+                "message": "Spanley recovered from a learning mistake",
+                "code": 2
+              }
+            },
+            {
+              "traceId": "54137b4f43cd4e1a5898fc9ef0a711d7",
+              "spanId": "5ebb05d134ead11f",
+              "parentSpanId": "5173258e36225d9e",
+              "name": "spanley-growing-up-phase",
+              "kind": 1,
+              "startTimeUnixNano": "1750737117824000000",
+              "endTimeUnixNano": "1750737118326590833",
+              "attributes": [
+                {
+                  "key": "journey.phase",
+                  "value": {
+                    "stringValue": "growing-up"
+                  }
+                },
+                {
+                  "key": "spanley.weather",
+                  "value": {
+                    "stringValue": "sunny"
+                  }
+                },
+                {
+                  "key": "spanley.mood",
+                  "value": {
+                    "stringValue": "happy"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750737117824334375",
+                  "name": "Spanley begins to grow"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "54137b4f43cd4e1a5898fc9ef0a711d7",
+              "spanId": "c7eaf119b0734d99",
+              "parentSpanId": "f014b9eebb12fa86",
+              "name": "meeting-tracey",
+              "kind": 1,
+              "startTimeUnixNano": "1750737118327000000",
+              "endTimeUnixNano": "1750737118478141250",
+              "attributes": [
+                {
+                  "key": "friend.name",
+                  "value": {
+                    "stringValue": "Tracey"
+                  }
+                },
+                {
+                  "key": "friendship.status",
+                  "value": {
+                    "stringValue": "new"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750737118327379334",
+                  "name": "Spanley says hello to Tracey"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "54137b4f43cd4e1a5898fc9ef0a711d7",
+              "spanId": "d7ba99404bb71058",
+              "parentSpanId": "f014b9eebb12fa86",
+              "name": "meeting-spandrew",
+              "kind": 1,
+              "startTimeUnixNano": "1750737118478000000",
+              "endTimeUnixNano": "1750737118630501792",
+              "attributes": [
+                {
+                  "key": "friend.name",
+                  "value": {
+                    "stringValue": "Spandrew"
+                  }
+                },
+                {
+                  "key": "friendship.status",
+                  "value": {
+                    "stringValue": "new"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750737118478528584",
+                  "name": "Spanley says hello to Spandrew"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "54137b4f43cd4e1a5898fc9ef0a711d7",
+              "spanId": "31198f5a18bdbac4",
+              "parentSpanId": "f014b9eebb12fa86",
+              "name": "meeting-olly",
+              "kind": 1,
+              "startTimeUnixNano": "1750737118631000000",
+              "endTimeUnixNano": "1750737118781682417",
+              "attributes": [
+                {
+                  "key": "friend.name",
+                  "value": {
+                    "stringValue": "Olly"
+                  }
+                },
+                {
+                  "key": "friendship.status",
+                  "value": {
+                    "stringValue": "new"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750737118631103667",
+                  "name": "Spanley says hello to Olly"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "54137b4f43cd4e1a5898fc9ef0a711d7",
+              "spanId": "f014b9eebb12fa86",
+              "parentSpanId": "5173258e36225d9e",
+              "name": "spanley-making-friends-phase",
+              "kind": 1,
+              "startTimeUnixNano": "1750737118327000000",
+              "endTimeUnixNano": "1750737118782118042",
+              "attributes": [
+                {
+                  "key": "journey.phase",
+                  "value": {
+                    "stringValue": "making-friends"
+                  }
+                },
+                {
+                  "key": "spanley.location",
+                  "value": {
+                    "stringValue": "playground"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750737118327187792",
+                  "name": "Spanley starts making friends"
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "54137b4f43cd4e1a5898fc9ef0a711d7",
+              "spanId": "036f145524f3327e",
+              "parentSpanId": "5173258e36225d9e",
+              "name": "spanley-legacy-phase",
+              "kind": 1,
+              "startTimeUnixNano": "1750737118782000000",
+              "endTimeUnixNano": "1750737118782163167",
+              "attributes": [
+                {
+                  "key": "journey.phase",
+                  "value": {
+                    "stringValue": "legacy"
+                  }
+                }
+              ],
+              "events": [
+                {
+                  "timeUnixNano": "1750737118782160667",
+                  "name": "Spanley's journey is complete",
+                  "attributes": [
+                    {
+                      "key": "wisdom_gained",
+                      "value": {
+                        "stringValue": "true"
+                      }
+                    },
+                    {
+                      "key": "legacy",
+                      "value": {
+                        "stringValue": "visibility"
+                      }
+                    }
+                  ]
+                }
+              ],
+              "status": {}
+            },
+            {
+              "traceId": "54137b4f43cd4e1a5898fc9ef0a711d7",
+              "spanId": "5173258e36225d9e",
+              "parentSpanId": "3e3c6d2ca80bc2cd",
+              "name": "spanley-life-journey",
+              "kind": 1,
+              "startTimeUnixNano": "1750737117622000000",
+              "endTimeUnixNano": "1750737118785675917",
+              "events": [
+                {
+                  "timeUnixNano": "1750737117622100042",
+                  "name": "Spanley's journey begins!"
                 }
               ],
               "status": {}
@@ -149,24 +420,24 @@
           },
           "spans": [
             {
-              "traceId": "b21b10fcb48e7e00d0c6a7aca1fae38b",
-              "spanId": "311a4680b3544a47",
-              "parentSpanId": "cafa61750684cd5a",
-              "name": "request handler - /hello",
+              "traceId": "54137b4f43cd4e1a5898fc9ef0a711d7",
+              "spanId": "3e3c6d2ca80bc2cd",
+              "parentSpanId": "e91051ea1afd6f73",
+              "name": "request handler - /spanley",
               "kind": 1,
-              "startTimeUnixNano": "1750281560513000000",
-              "endTimeUnixNano": "1750281561518778708",
+              "startTimeUnixNano": "1750737117622000000",
+              "endTimeUnixNano": "1750737118786407875",
               "attributes": [
                 {
                   "key": "http.route",
                   "value": {
-                    "stringValue": "/hello"
+                    "stringValue": "/spanley"
                   }
                 },
                 {
                   "key": "express.name",
                   "value": {
-                    "stringValue": "/hello"
+                    "stringValue": "/spanley"
                   }
                 },
                 {
@@ -187,108 +458,84 @@
           },
           "spans": [
             {
-              "traceId": "b21b10fcb48e7e00d0c6a7aca1fae38b",
-              "spanId": "cafa61750684cd5a",
+              "traceId": "54137b4f43cd4e1a5898fc9ef0a711d7",
+              "spanId": "e91051ea1afd6f73",
               "parentSpanId": "",
-              "name": "GET /hello",
+              "name": "GET /spanley",
               "kind": 2,
-              "startTimeUnixNano": "1750281560511000000",
-              "endTimeUnixNano": "1750281561519644041",
+              "startTimeUnixNano": "1750737117621000000",
+              "endTimeUnixNano": "1750737118787032625",
               "attributes": [
                 {
-                  "key": "http.url",
-                  "value": {
-                    "stringValue": "http://localhost:3000/hello"
-                  }
-                },
-                {
-                  "key": "http.host",
-                  "value": {
-                    "stringValue": "localhost:3000"
-                  }
-                },
-                {
-                  "key": "net.host.name",
-                  "value": {
-                    "stringValue": "localhost"
-                  }
-                },
-                {
-                  "key": "http.method",
+                  "key": "http.request.method",
                   "value": {
                     "stringValue": "GET"
                   }
                 },
                 {
-                  "key": "http.scheme",
+                  "key": "url.scheme",
                   "value": {
                     "stringValue": "http"
                   }
                 },
                 {
-                  "key": "http.target",
+                  "key": "server.address",
                   "value": {
-                    "stringValue": "/hello"
+                    "stringValue": "localhost"
                   }
                 },
                 {
-                  "key": "http.user_agent",
+                  "key": "network.peer.address",
                   "value": {
-                    "stringValue": "curl/8.7.1"
+                    "stringValue": "::1"
                   }
                 },
                 {
-                  "key": "http.flavor",
+                  "key": "network.peer.port",
+                  "value": {
+                    "intValue": "49887"
+                  }
+                },
+                {
+                  "key": "network.protocol.version",
                   "value": {
                     "stringValue": "1.1"
                   }
                 },
                 {
-                  "key": "net.transport",
+                  "key": "user_agent.original",
                   "value": {
-                    "stringValue": "ip_tcp"
+                    "stringValue": "curl/8.7.1"
                   }
                 },
                 {
-                  "key": "net.host.ip",
+                  "key": "url.path",
+                  "value": {
+                    "stringValue": "/spanley"
+                  }
+                },
+                {
+                  "key": "client.address",
                   "value": {
                     "stringValue": "::1"
                   }
                 },
                 {
-                  "key": "net.host.port",
+                  "key": "server.port",
                   "value": {
                     "intValue": "3000"
                   }
                 },
                 {
-                  "key": "net.peer.ip",
-                  "value": {
-                    "stringValue": "::1"
-                  }
-                },
-                {
-                  "key": "net.peer.port",
-                  "value": {
-                    "intValue": "56777"
-                  }
-                },
-                {
-                  "key": "http.status_code",
+                  "key": "http.response.status_code",
                   "value": {
                     "intValue": "200"
                   }
                 },
                 {
-                  "key": "http.status_text",
-                  "value": {
-                    "stringValue": "OK"
-                  }
-                },
-                {
                   "key": "http.route",
                   "value": {
-                    "stringValue": "/hello"
+                    "stringValue": "/spanley"
                   }
                 }
               ],

@@ -98,15 +98,15 @@ app.get('/spanley', async (req: Request, res: Response) => {
       friendsSpan.end();
     });
 
-      await tracer.startActiveSpan("spanley-completion-phase", async (completionSpan) => {
-        completionSpan.setAttributes({
-          "journey.phase": "completion"
+      await tracer.startActiveSpan("spanley-legacy-phase", async (legacySpan) => {
+        legacySpan.setAttributes({
+          "journey.phase": "legacy"
         });
-        completionSpan.addEvent("Spanley's journey is complete", {
+        legacySpan.addEvent("Spanley's journey is complete", {
           "wisdom_gained": "true",
           "legacy": "visibility"
         });
-        completionSpan.end();
+        legacySpan.end();
       });
 
       res.send(`

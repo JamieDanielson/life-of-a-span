@@ -1,158 +1,251 @@
-2025-06-18 17: 19: 06.396 | 2025-06-18T21: 19: 06.396Z	info	service@v0.128.0/service.go: 199	Setting up own telemetry...	{
-  "resource": {
-    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
-    "service.name": "otelcol",
-    "service.version": "0.128.0"
-  }
-}
-2025-06-18 17: 19: 06.397 | 2025-06-18T21: 19: 06.396Z	info	builders/builders.go: 26	Development component. May change in the future.	{
-  "resource": {
-    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
-    "service.name": "otelcol",
-    "service.version": "0.128.0"
-  },
-  "otelcol.component.id": "debug",
-  "otelcol.component.kind": "exporter",
-  "otelcol.signal": "traces"
-}
-2025-06-18 17: 19: 06.397 | 2025-06-18T21: 19: 06.397Z	info	service@v0.128.0/service.go: 259	Starting otelcol...	{
-  "resource": {
-    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
-    "service.name": "otelcol",
-    "service.version": "0.128.0"
-  },
-  "Version": "0.128.0",
-  "NumCPU": 12
-}
-2025-06-18 17: 19: 06.397 | 2025-06-18T21: 19: 06.397Z	info	extensions/extensions.go: 41	Starting extensions...	{
-  "resource": {
-    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
-    "service.name": "otelcol",
-    "service.version": "0.128.0"
-  }
-}
-2025-06-18 17: 19: 06.398 | 2025-06-18T21: 19: 06.398Z	info	otlpreceiver@v0.128.0/otlp.go: 117	Starting GRPC server	{
-  "resource": {
-    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
-    "service.name": "otelcol",
-    "service.version": "0.128.0"
-  },
-  "otelcol.component.id": "otlp",
-  "otelcol.component.kind": "receiver",
-  "endpoint": "0.0.0.0:4317"
-}
-2025-06-18 17: 19: 06.398 | 2025-06-18T21: 19: 06.398Z	info	otlpreceiver@v0.128.0/otlp.go: 175	Starting HTTP server	{
-  "resource": {
-    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
-    "service.name": "otelcol",
-    "service.version": "0.128.0"
-  },
-  "otelcol.component.id": "otlp",
-  "otelcol.component.kind": "receiver",
-  "endpoint": "0.0.0.0:4318"
-}
-2025-06-18 17: 19: 06.398 | 2025-06-18T21: 19: 06.398Z	info	service@v0.128.0/service.go: 282	Everything is ready. Begin running and processing data.	{
-  "resource": {
-    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
-    "service.name": "otelcol",
-    "service.version": "0.128.0"
-  }
-}
-2025-06-18 17: 19: 26.714 | 2025-06-18T21: 19: 26.712Z	info	Traces	{
-  "resource": {
-    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
-    "service.name": "otelcol",
-    "service.version": "0.128.0"
-  },
-  "otelcol.component.id": "debug",
-  "otelcol.component.kind": "exporter",
-  "otelcol.signal": "traces",
-  "resource spans": 1,
-  "spans": 3
-}
-2025-06-18 17: 19: 26.717 | 2025-06-18T21: 19: 26.715Z	info	ResourceSpans #0
-2025-06-18 17: 19: 26.717 | Resource SchemaURL: 2025-06-18 17: 19: 26.717 | Resource attributes: 2025-06-18 17: 19: 26.717 |      -> service.name: Str(life-of-a-span)
-2025-06-18 17: 19: 26.717 |      -> host.name: Str(jamiedanielson)
-2025-06-18 17: 19: 26.717 |      -> host.arch: Str(arm64)
-2025-06-18 17: 19: 26.717 |      -> host.id: Str(79500692-6A8B-5982-9732-2FDB84D7E66E)
-2025-06-18 17: 19: 26.717 |      -> process.pid: Int(75646)
-2025-06-18 17: 19: 26.717 |      -> process.executable.name: Str(node)
-2025-06-18 17: 19: 26.717 |      -> process.executable.path: Str(/Users/jamiedanielson/.asdf/installs/nodejs/20.6.0/bin/node)
-2025-06-18 17: 19: 26.717 |      -> process.command_args: Slice([
-  "/Users/jamiedanielson/.asdf/installs/nodejs/20.6.0/bin/node",
-  "/Users/jamiedanielson/code/life-of-a-span/dist/index.js"
-])
-2025-06-18 17: 19: 26.717 |      -> process.runtime.version: Str(20.6.0)
-2025-06-18 17: 19: 26.717 |      -> process.runtime.name: Str(nodejs)
-2025-06-18 17: 19: 26.717 |      -> process.runtime.description: Str(Node.js)
-2025-06-18 17: 19: 26.717 |      -> process.command: Str(/Users/jamiedanielson/code/life-of-a-span/dist/index.js)
-2025-06-18 17: 19: 26.717 |      -> process.owner: Str(jamiedanielson)
-2025-06-18 17: 19: 26.717 |      -> telemetry.sdk.language: Str(nodejs)
-2025-06-18 17: 19: 26.717 |      -> telemetry.sdk.name: Str(opentelemetry)
-2025-06-18 17: 19: 26.717 |      -> telemetry.sdk.version: Str(2.0.0)
-2025-06-18 17: 19: 26.717 | ScopeSpans #0
-2025-06-18 17: 19: 26.717 | ScopeSpans SchemaURL: 2025-06-18 17: 19: 26.717 | InstrumentationScope spanley-tracer
-2025-06-18 17: 19: 26.717 | Span #0
-2025-06-18 17: 19: 26.717 |     Trace ID       : b21b10fcb48e7e00d0c6a7aca1fae38b
-2025-06-18 17: 19: 26.717 |     Parent ID      : 311a4680b3544a47
-2025-06-18 17: 19: 26.717 |     ID             : ca556a907c65a80a
-2025-06-18 17: 19: 26.717 |     Name           : spanley-picking-up-clues
-2025-06-18 17: 19: 26.717 |     Kind           : Internal
-2025-06-18 17: 19: 26.717 |     Start time     : 2025-06-18 21: 19: 20.514 +0000 UTC
-2025-06-18 17: 19: 26.717 |     End time       : 2025-06-18 21: 19: 21.518824 +0000 UTC
-2025-06-18 17: 19: 26.717 |     Status code    : Unset
-2025-06-18 17: 19: 26.717 |     Status message : 2025-06-18 17: 19: 26.717 | Attributes: 2025-06-18 17: 19: 26.717 |      -> app.distraction: Str(squirrel)
-2025-06-18 17: 19: 26.717 | Events: 2025-06-18 17: 19: 26.717 | SpanEvent #0
-2025-06-18 17: 19: 26.717 |      -> Name: spanley saw a squirrel
-2025-06-18 17: 19: 26.717 |      -> Timestamp: 2025-06-18 21: 19: 21.515300292 +0000 UTC
-2025-06-18 17: 19: 26.717 |      -> DroppedAttributesCount: 0
-2025-06-18 17: 19: 26.717 | ScopeSpans #1
-2025-06-18 17: 19: 26.717 | ScopeSpans SchemaURL: 2025-06-18 17: 19: 26.717 | InstrumentationScope @opentelemetry/instrumentation-express 0.49.0
-2025-06-18 17: 19: 26.717 | Span #0
-2025-06-18 17: 19: 26.717 |     Trace ID       : b21b10fcb48e7e00d0c6a7aca1fae38b
-2025-06-18 17: 19: 26.717 |     Parent ID      : cafa61750684cd5a
-2025-06-18 17: 19: 26.717 |     ID             : 311a4680b3544a47
-2025-06-18 17: 19: 26.717 |     Name           : request handler - /hello
-2025-06-18 17: 19: 26.717 |     Kind           : Internal
-2025-06-18 17: 19: 26.717 |     Start time     : 2025-06-18 21: 19: 20.513 +0000 UTC
-2025-06-18 17: 19: 26.717 |     End time       : 2025-06-18 21: 19: 21.518778708 +0000 UTC
-2025-06-18 17: 19: 26.717 |     Status code    : Unset
-2025-06-18 17: 19: 26.717 |     Status message : 2025-06-18 17: 19: 26.717 | Attributes: 2025-06-18 17: 19: 26.717 |      -> http.route: Str(/hello)
-2025-06-18 17: 19: 26.717 |      -> express.name: Str(/hello)
-2025-06-18 17: 19: 26.717 |      -> express.type: Str(request_handler)
-2025-06-18 17: 19: 26.717 | ScopeSpans #2
-2025-06-18 17: 19: 26.717 | ScopeSpans SchemaURL: 2025-06-18 17: 19: 26.717 | InstrumentationScope @opentelemetry/instrumentation-http 0.200.0
-2025-06-18 17: 19: 26.717 | Span #0
-2025-06-18 17: 19: 26.717 |     Trace ID       : b21b10fcb48e7e00d0c6a7aca1fae38b
-2025-06-18 17: 19: 26.717 |     Parent ID      : 2025-06-18 17: 19: 26.717 |     ID             : cafa61750684cd5a
-2025-06-18 17: 19: 26.717 |     Name           : GET /hello
-2025-06-18 17: 19: 26.717 |     Kind           : Server
-2025-06-18 17: 19: 26.717 |     Start time     : 2025-06-18 21: 19: 20.511 +0000 UTC
-2025-06-18 17: 19: 26.717 |     End time       : 2025-06-18 21: 19: 21.519644041 +0000 UTC
-2025-06-18 17: 19: 26.717 |     Status code    : Unset
-2025-06-18 17: 19: 26.717 |     Status message : 2025-06-18 17: 19: 26.717 | Attributes: 2025-06-18 17: 19: 26.717 |      -> http.url: Str(http: //localhost:3000/hello)
-2025-06-18 17: 19: 26.717 |      -> http.host: Str(localhost: 3000)
-2025-06-18 17: 19: 26.717 |      -> net.host.name: Str(localhost)
-2025-06-18 17: 19: 26.717 |      -> http.method: Str(GET)
-2025-06-18 17: 19: 26.717 |      -> http.scheme: Str(http)
-2025-06-18 17: 19: 26.717 |      -> http.target: Str(/hello)
-2025-06-18 17: 19: 26.717 |      -> http.user_agent: Str(curl/8.7.1)
-2025-06-18 17: 19: 26.717 |      -> http.flavor: Str(1.1)
-2025-06-18 17: 19: 26.717 |      -> net.transport: Str(ip_tcp)
-2025-06-18 17: 19: 26.717 |      -> net.host.ip: Str(: : 1)
-2025-06-18 17: 19: 26.717 |      -> net.host.port: Int(3000)
-2025-06-18 17: 19: 26.717 |      -> net.peer.ip: Str(: : 1)
-2025-06-18 17: 19: 26.717 |      -> net.peer.port: Int(56777)
-2025-06-18 17: 19: 26.717 |      -> http.status_code: Int(200)
-2025-06-18 17: 19: 26.717 |      -> http.status_text: Str(OK)
-2025-06-18 17: 19: 26.717 |      -> http.route: Str(/hello)
-2025-06-18 17: 19: 26.718 | 	{
-  "resource": {
-    "service.instance.id": "6614b0df-1aff-4869-a01c-f1d31bd27a4d",
-    "service.name": "otelcol",
-    "service.version": "0.128.0"
-  },
-  "otelcol.component.id": "debug",
-  "otelcol.component.kind": "exporter",
-  "otelcol.signal": "traces"
-}
+2025-06-23 23:51:30.839 | 2025-06-24T03:51:30.839Z	info	service@v0.128.0/service.go:199	Setting up own telemetry...	{"resource": {"service.instance.id": "b9b9f6f6-5d48-49fe-8710-bafaa2ec0f56", "service.name": "otelcol", "service.version": "0.128.0"}}
+2025-06-23 23:51:30.839 | 2025-06-24T03:51:30.839Z	info	builders/builders.go:26	Development component. May change in the future.	{"resource": {"service.instance.id": "b9b9f6f6-5d48-49fe-8710-bafaa2ec0f56", "service.name": "otelcol", "service.version": "0.128.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
+2025-06-23 23:51:30.840 | 2025-06-24T03:51:30.840Z	info	service@v0.128.0/service.go:259	Starting otelcol...	{"resource": {"service.instance.id": "b9b9f6f6-5d48-49fe-8710-bafaa2ec0f56", "service.name": "otelcol", "service.version": "0.128.0"}, "Version": "0.128.0", "NumCPU": 12}
+2025-06-23 23:51:30.840 | 2025-06-24T03:51:30.840Z	info	extensions/extensions.go:41	Starting extensions...	{"resource": {"service.instance.id": "b9b9f6f6-5d48-49fe-8710-bafaa2ec0f56", "service.name": "otelcol", "service.version": "0.128.0"}}
+2025-06-23 23:51:30.840 | 2025-06-24T03:51:30.840Z	info	otlpreceiver@v0.128.0/otlp.go:117	Starting GRPC server	{"resource": {"service.instance.id": "b9b9f6f6-5d48-49fe-8710-bafaa2ec0f56", "service.name": "otelcol", "service.version": "0.128.0"}, "otelcol.component.id": "otlp", "otelcol.component.kind": "receiver", "endpoint": "0.0.0.0:4317"}
+2025-06-23 23:51:30.840 | 2025-06-24T03:51:30.840Z	info	otlpreceiver@v0.128.0/otlp.go:175	Starting HTTP server	{"resource": {"service.instance.id": "b9b9f6f6-5d48-49fe-8710-bafaa2ec0f56", "service.name": "otelcol", "service.version": "0.128.0"}, "otelcol.component.id": "otlp", "otelcol.component.kind": "receiver", "endpoint": "0.0.0.0:4318"}
+2025-06-23 23:51:30.840 | 2025-06-24T03:51:30.840Z	info	service@v0.128.0/service.go:282	Everything is ready. Begin running and processing data.	{"resource": {"service.instance.id": "b9b9f6f6-5d48-49fe-8710-bafaa2ec0f56", "service.name": "otelcol", "service.version": "0.128.0"}}
+2025-06-23 23:52:02.946 | 2025-06-24T03:52:02.946Z	info	Traces	{"resource": {"service.instance.id": "b9b9f6f6-5d48-49fe-8710-bafaa2ec0f56", "service.name": "otelcol", "service.version": "0.128.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces", "resource spans": 1, "spans": 11}
+2025-06-23 23:52:02.946 | 2025-06-24T03:52:02.946Z	info	ResourceSpans #0
+2025-06-23 23:52:02.946 | Resource SchemaURL:
+2025-06-23 23:52:02.946 | Resource attributes:
+2025-06-23 23:52:02.946 |      -> service.name: Str(life-of-a-span)
+2025-06-23 23:52:02.946 |      -> host.name: Str(jamiedanielson)
+2025-06-23 23:52:02.946 |      -> host.arch: Str(arm64)
+2025-06-23 23:52:02.946 |      -> host.id: Str(79500692-6A8B-5982-9732-2FDB84D7E66E)
+2025-06-23 23:52:02.946 |      -> process.pid: Int(53165)
+2025-06-23 23:52:02.946 |      -> process.executable.name: Str(node)
+2025-06-23 23:52:02.946 |      -> process.executable.path: Str(/Users/jamiedanielson/.asdf/installs/nodejs/20.6.0/bin/node)
+2025-06-23 23:52:02.946 |      -> process.command_args: Slice(["/Users/jamiedanielson/.asdf/installs/nodejs/20.6.0/bin/node","/Users/jamiedanielson/code/life-of-a-span/dist/index.js"])
+2025-06-23 23:52:02.946 |      -> process.runtime.version: Str(20.6.0)
+2025-06-23 23:52:02.946 |      -> process.runtime.name: Str(nodejs)
+2025-06-23 23:52:02.946 |      -> process.runtime.description: Str(Node.js)
+2025-06-23 23:52:02.946 |      -> process.command: Str(/Users/jamiedanielson/code/life-of-a-span/dist/index.js)
+2025-06-23 23:52:02.946 |      -> process.owner: Str(jamiedanielson)
+2025-06-23 23:52:02.946 |      -> birth.location: Str(Observabilitown)
+2025-06-23 23:52:02.946 | ScopeSpans #0
+2025-06-23 23:52:02.946 | ScopeSpans SchemaURL:
+2025-06-23 23:52:02.946 | InstrumentationScope spanley-tracer
+2025-06-23 23:52:02.946 | Span #0
+2025-06-23 23:52:02.946 |     Trace ID       : 54137b4f43cd4e1a5898fc9ef0a711d7
+2025-06-23 23:52:02.946 |     Parent ID      : 5173258e36225d9e
+2025-06-23 23:52:02.946 |     ID             : 53b32a69e59c0d00
+2025-06-23 23:52:02.946 |     Name           : spanley-birth-phase
+2025-06-23 23:52:02.946 |     Kind           : Internal
+2025-06-23 23:52:02.946 |     Start time     : 2025-06-24 03:51:57.622 +0000 UTC
+2025-06-23 23:52:02.946 |     End time       : 2025-06-24 03:51:57.8231915 +0000 UTC
+2025-06-23 23:52:02.946 |     Status code    : Unset
+2025-06-23 23:52:02.946 |     Status message :
+2025-06-23 23:52:02.946 | Attributes:
+2025-06-23 23:52:02.946 |      -> spanley.birth.location: Str(code)
+2025-06-23 23:52:02.946 |      -> spanley.purpose: Str(observability)
+2025-06-23 23:52:02.946 |      -> journey.phase: Str(birth)
+2025-06-23 23:52:02.946 | Events:
+2025-06-23 23:52:02.946 | SpanEvent #0
+2025-06-23 23:52:02.946 |      -> Name: Spanley is born!
+2025-06-23 23:52:02.946 |      -> Timestamp: 2025-06-24 03:51:57.622104583 +0000 UTC
+2025-06-23 23:52:02.946 |      -> DroppedAttributesCount: 0
+2025-06-23 23:52:02.946 | Span #1
+2025-06-23 23:52:02.946 |     Trace ID       : 54137b4f43cd4e1a5898fc9ef0a711d7
+2025-06-23 23:52:02.946 |     Parent ID      : 5ebb05d134ead11f
+2025-06-23 23:52:02.946 |     ID             : 0f62bcca085b3a67
+2025-06-23 23:52:02.946 |     Name           : spanley-learning-skills
+2025-06-23 23:52:02.946 |     Kind           : Internal
+2025-06-23 23:52:02.946 |     Start time     : 2025-06-24 03:51:58.125 +0000 UTC
+2025-06-23 23:52:02.946 |     End time       : 2025-06-24 03:51:58.326556875 +0000 UTC
+2025-06-23 23:52:02.946 |     Status code    : Error
+2025-06-23 23:52:02.946 |     Status message : Spanley recovered from a learning mistake
+2025-06-23 23:52:02.946 | Attributes:
+2025-06-23 23:52:02.946 |      -> skill.type: Str(attributes)
+2025-06-23 23:52:02.946 |      -> skill.level: Str(intermediate)
+2025-06-23 23:52:02.946 | Events:
+2025-06-23 23:52:02.946 | SpanEvent #0
+2025-06-23 23:52:02.946 |      -> Name: Spanley learned about attributes
+2025-06-23 23:52:02.946 |      -> Timestamp: 2025-06-24 03:51:58.125571792 +0000 UTC
+2025-06-23 23:52:02.946 |      -> DroppedAttributesCount: 0
+2025-06-23 23:52:02.946 | SpanEvent #1
+2025-06-23 23:52:02.946 |      -> Name: Spanley attempts error handling
+2025-06-23 23:52:02.946 |      -> Timestamp: 2025-06-24 03:51:58.326089833 +0000 UTC
+2025-06-23 23:52:02.946 |      -> DroppedAttributesCount: 0
+2025-06-23 23:52:02.946 | SpanEvent #2
+2025-06-23 23:52:02.946 |      -> Name: exception
+2025-06-23 23:52:02.946 |      -> Timestamp: 2025-06-24 03:51:58.326453375 +0000 UTC
+2025-06-23 23:52:02.946 |      -> DroppedAttributesCount: 0
+2025-06-23 23:52:02.946 |      -> Attributes::
+2025-06-23 23:52:02.946 |           -> exception.type: Str(Error)
+2025-06-23 23:52:02.946 |           -> exception.message: Str(Controlled learning error)
+2025-06-23 23:52:02.946 |           -> exception.stacktrace: Str(Error: Controlled learning error
+2025-06-23 23:52:02.946 |     at /Users/jamiedanielson/code/life-of-a-span/dist/index.js:60:31
+2025-06-23 23:52:02.946 |     at async /Users/jamiedanielson/code/life-of-a-span/dist/index.js:50:17
+2025-06-23 23:52:02.946 |     at async /Users/jamiedanielson/code/life-of-a-span/dist/index.js:42:13
+2025-06-23 23:52:02.946 |     at async /Users/jamiedanielson/code/life-of-a-span/dist/index.js:29:5)
+2025-06-23 23:52:02.946 | Span #2
+2025-06-23 23:52:02.946 |     Trace ID       : 54137b4f43cd4e1a5898fc9ef0a711d7
+2025-06-23 23:52:02.946 |     Parent ID      : 5173258e36225d9e
+2025-06-23 23:52:02.946 |     ID             : 5ebb05d134ead11f
+2025-06-23 23:52:02.946 |     Name           : spanley-growing-up-phase
+2025-06-23 23:52:02.946 |     Kind           : Internal
+2025-06-23 23:52:02.946 |     Start time     : 2025-06-24 03:51:57.824 +0000 UTC
+2025-06-23 23:52:02.946 |     End time       : 2025-06-24 03:51:58.326590833 +0000 UTC
+2025-06-23 23:52:02.946 |     Status code    : Unset
+2025-06-23 23:52:02.946 |     Status message :
+2025-06-23 23:52:02.946 | Attributes:
+2025-06-23 23:52:02.946 |      -> journey.phase: Str(growing-up)
+2025-06-23 23:52:02.946 |      -> spanley.weather: Str(sunny)
+2025-06-23 23:52:02.946 |      -> spanley.mood: Str(happy)
+2025-06-23 23:52:02.946 | Events:
+2025-06-23 23:52:02.946 | SpanEvent #0
+2025-06-23 23:52:02.946 |      -> Name: Spanley begins to grow
+2025-06-23 23:52:02.946 |      -> Timestamp: 2025-06-24 03:51:57.824334375 +0000 UTC
+2025-06-23 23:52:02.946 |      -> DroppedAttributesCount: 0
+2025-06-23 23:52:02.946 | Span #3
+2025-06-23 23:52:02.946 |     Trace ID       : 54137b4f43cd4e1a5898fc9ef0a711d7
+2025-06-23 23:52:02.946 |     Parent ID      : f014b9eebb12fa86
+2025-06-23 23:52:02.946 |     ID             : c7eaf119b0734d99
+2025-06-23 23:52:02.946 |     Name           : meeting-tracey
+2025-06-23 23:52:02.946 |     Kind           : Internal
+2025-06-23 23:52:02.946 |     Start time     : 2025-06-24 03:51:58.327 +0000 UTC
+2025-06-23 23:52:02.946 |     End time       : 2025-06-24 03:51:58.47814125 +0000 UTC
+2025-06-23 23:52:02.946 |     Status code    : Unset
+2025-06-23 23:52:02.946 |     Status message :
+2025-06-23 23:52:02.946 | Attributes:
+2025-06-23 23:52:02.946 |      -> friend.name: Str(Tracey)
+2025-06-23 23:52:02.946 |      -> friendship.status: Str(new)
+2025-06-23 23:52:02.946 | Events:
+2025-06-23 23:52:02.946 | SpanEvent #0
+2025-06-23 23:52:02.946 |      -> Name: Spanley says hello to Tracey
+2025-06-23 23:52:02.946 |      -> Timestamp: 2025-06-24 03:51:58.327379334 +0000 UTC
+2025-06-23 23:52:02.946 |      -> DroppedAttributesCount: 0
+2025-06-23 23:52:02.946 | Span #4
+2025-06-23 23:52:02.946 |     Trace ID       : 54137b4f43cd4e1a5898fc9ef0a711d7
+2025-06-23 23:52:02.946 |     Parent ID      : f014b9eebb12fa86
+2025-06-23 23:52:02.946 |     ID             : d7ba99404bb71058
+2025-06-23 23:52:02.946 |     Name           : meeting-spandrew
+2025-06-23 23:52:02.946 |     Kind           : Internal
+2025-06-23 23:52:02.946 |     Start time     : 2025-06-24 03:51:58.478 +0000 UTC
+2025-06-23 23:52:02.946 |     End time       : 2025-06-24 03:51:58.630501792 +0000 UTC
+2025-06-23 23:52:02.946 |     Status code    : Unset
+2025-06-23 23:52:02.946 |     Status message :
+2025-06-23 23:52:02.946 | Attributes:
+2025-06-23 23:52:02.946 |      -> friend.name: Str(Spandrew)
+2025-06-23 23:52:02.946 |      -> friendship.status: Str(new)
+2025-06-23 23:52:02.946 | Events:
+2025-06-23 23:52:02.946 | SpanEvent #0
+2025-06-23 23:52:02.946 |      -> Name: Spanley says hello to Spandrew
+2025-06-23 23:52:02.946 |      -> Timestamp: 2025-06-24 03:51:58.478528584 +0000 UTC
+2025-06-23 23:52:02.946 |      -> DroppedAttributesCount: 0
+2025-06-23 23:52:02.946 | Span #5
+2025-06-23 23:52:02.946 |     Trace ID       : 54137b4f43cd4e1a5898fc9ef0a711d7
+2025-06-23 23:52:02.946 |     Parent ID      : f014b9eebb12fa86
+2025-06-23 23:52:02.946 |     ID             : 31198f5a18bdbac4
+2025-06-23 23:52:02.946 |     Name           : meeting-olly
+2025-06-23 23:52:02.946 |     Kind           : Internal
+2025-06-23 23:52:02.946 |     Start time     : 2025-06-24 03:51:58.631 +0000 UTC
+2025-06-23 23:52:02.946 |     End time       : 2025-06-24 03:51:58.781682417 +0000 UTC
+2025-06-23 23:52:02.946 |     Status code    : Unset
+2025-06-23 23:52:02.946 |     Status message :
+2025-06-23 23:52:02.946 | Attributes:
+2025-06-23 23:52:02.946 |      -> friend.name: Str(Olly)
+2025-06-23 23:52:02.946 |      -> friendship.status: Str(new)
+2025-06-23 23:52:02.946 | Events:
+2025-06-23 23:52:02.946 | SpanEvent #0
+2025-06-23 23:52:02.946 |      -> Name: Spanley says hello to Olly
+2025-06-23 23:52:02.946 |      -> Timestamp: 2025-06-24 03:51:58.631103667 +0000 UTC
+2025-06-23 23:52:02.946 |      -> DroppedAttributesCount: 0
+2025-06-23 23:52:02.946 | Span #6
+2025-06-23 23:52:02.946 |     Trace ID       : 54137b4f43cd4e1a5898fc9ef0a711d7
+2025-06-23 23:52:02.946 |     Parent ID      : 5173258e36225d9e
+2025-06-23 23:52:02.946 |     ID             : f014b9eebb12fa86
+2025-06-23 23:52:02.946 |     Name           : spanley-making-friends-phase
+2025-06-23 23:52:02.946 |     Kind           : Internal
+2025-06-23 23:52:02.946 |     Start time     : 2025-06-24 03:51:58.327 +0000 UTC
+2025-06-23 23:52:02.946 |     End time       : 2025-06-24 03:51:58.782118042 +0000 UTC
+2025-06-23 23:52:02.946 |     Status code    : Unset
+2025-06-23 23:52:02.946 |     Status message :
+2025-06-23 23:52:02.946 | Attributes:
+2025-06-23 23:52:02.946 |      -> journey.phase: Str(making-friends)
+2025-06-23 23:52:02.946 |      -> spanley.location: Str(playground)
+2025-06-23 23:52:02.946 | Events:
+2025-06-23 23:52:02.946 | SpanEvent #0
+2025-06-23 23:52:02.946 |      -> Name: Spanley starts making friends
+2025-06-23 23:52:02.946 |      -> Timestamp: 2025-06-24 03:51:58.327187792 +0000 UTC
+2025-06-23 23:52:02.946 |      -> DroppedAttributesCount: 0
+2025-06-23 23:52:02.946 | Span #7
+2025-06-23 23:52:02.946 |     Trace ID       : 54137b4f43cd4e1a5898fc9ef0a711d7
+2025-06-23 23:52:02.946 |     Parent ID      : 5173258e36225d9e
+2025-06-23 23:52:02.946 |     ID             : 036f145524f3327e
+2025-06-23 23:52:02.946 |     Name           : spanley-legacy-phase
+2025-06-23 23:52:02.946 |     Kind           : Internal
+2025-06-23 23:52:02.946 |     Start time     : 2025-06-24 03:51:58.782 +0000 UTC
+2025-06-23 23:52:02.946 |     End time       : 2025-06-24 03:51:58.782163167 +0000 UTC
+2025-06-23 23:52:02.946 |     Status code    : Unset
+2025-06-23 23:52:02.946 |     Status message :
+2025-06-23 23:52:02.946 | Attributes:
+2025-06-23 23:52:02.946 |      -> journey.phase: Str(legacy)
+2025-06-23 23:52:02.946 | Events:
+2025-06-23 23:52:02.946 | SpanEvent #0
+2025-06-23 23:52:02.946 |      -> Name: Spanley's journey is complete
+2025-06-23 23:52:02.946 |      -> Timestamp: 2025-06-24 03:51:58.782160667 +0000 UTC
+2025-06-23 23:52:02.946 |      -> DroppedAttributesCount: 0
+2025-06-23 23:52:02.946 |      -> Attributes::
+2025-06-23 23:52:02.946 |           -> wisdom_gained: Str(true)
+2025-06-23 23:52:02.946 |           -> legacy: Str(visibility)
+2025-06-23 23:52:02.946 | Span #8
+2025-06-23 23:52:02.946 |     Trace ID       : 54137b4f43cd4e1a5898fc9ef0a711d7
+2025-06-23 23:52:02.946 |     Parent ID      : 3e3c6d2ca80bc2cd
+2025-06-23 23:52:02.946 |     ID             : 5173258e36225d9e
+2025-06-23 23:52:02.946 |     Name           : spanley-life-journey
+2025-06-23 23:52:02.946 |     Kind           : Internal
+2025-06-23 23:52:02.946 |     Start time     : 2025-06-24 03:51:57.622 +0000 UTC
+2025-06-23 23:52:02.946 |     End time       : 2025-06-24 03:51:58.785675917 +0000 UTC
+2025-06-23 23:52:02.946 |     Status code    : Unset
+2025-06-23 23:52:02.946 |     Status message :
+2025-06-23 23:52:02.946 | Events:
+2025-06-23 23:52:02.946 | SpanEvent #0
+2025-06-23 23:52:02.946 |      -> Name: Spanley's journey begins!
+2025-06-23 23:52:02.946 |      -> Timestamp: 2025-06-24 03:51:57.622100042 +0000 UTC
+2025-06-23 23:52:02.946 |      -> DroppedAttributesCount: 0
+2025-06-23 23:52:02.946 | ScopeSpans #1
+2025-06-23 23:52:02.946 | ScopeSpans SchemaURL:
+2025-06-23 23:52:02.947 | InstrumentationScope @opentelemetry/instrumentation-express 0.49.0
+2025-06-23 23:52:02.947 | Span #0
+2025-06-23 23:52:02.947 |     Trace ID       : 54137b4f43cd4e1a5898fc9ef0a711d7
+2025-06-23 23:52:02.947 |     Parent ID      : e91051ea1afd6f73
+2025-06-23 23:52:02.947 |     ID             : 3e3c6d2ca80bc2cd
+2025-06-23 23:52:02.947 |     Name           : request handler - /spanley
+2025-06-23 23:52:02.947 |     Kind           : Internal
+2025-06-23 23:52:02.947 |     Start time     : 2025-06-24 03:51:57.622 +0000 UTC
+2025-06-23 23:52:02.947 |     End time       : 2025-06-24 03:51:58.786407875 +0000 UTC
+2025-06-23 23:52:02.947 |     Status code    : Unset
+2025-06-23 23:52:02.947 |     Status message :
+2025-06-23 23:52:02.947 | Attributes:
+2025-06-23 23:52:02.947 |      -> http.route: Str(/spanley)
+2025-06-23 23:52:02.947 |      -> express.name: Str(/spanley)
+2025-06-23 23:52:02.947 |      -> express.type: Str(request_handler)
+2025-06-23 23:52:02.947 | ScopeSpans #2
+2025-06-23 23:52:02.947 | ScopeSpans SchemaURL:
+2025-06-23 23:52:02.947 | InstrumentationScope @opentelemetry/instrumentation-http 0.200.0
+2025-06-23 23:52:02.947 | Span #0
+2025-06-23 23:52:02.947 |     Trace ID       : 54137b4f43cd4e1a5898fc9ef0a711d7
+2025-06-23 23:52:02.947 |     Parent ID      :
+2025-06-23 23:52:02.947 |     ID             : e91051ea1afd6f73
+2025-06-23 23:52:02.947 |     Name           : GET /spanley
+2025-06-23 23:52:02.947 |     Kind           : Server
+2025-06-23 23:52:02.947 |     Start time     : 2025-06-24 03:51:57.621 +0000 UTC
+2025-06-23 23:52:02.947 |     End time       : 2025-06-24 03:51:58.787032625 +0000 UTC
+2025-06-23 23:52:02.947 |     Status code    : Unset
+2025-06-23 23:52:02.947 |     Status message :
+2025-06-23 23:52:02.947 | Attributes:
+2025-06-23 23:52:02.947 |      -> http.request.method: Str(GET)
+2025-06-23 23:52:02.947 |      -> url.scheme: Str(http)
+2025-06-23 23:52:02.947 |      -> server.address: Str(localhost)
+2025-06-23 23:52:02.947 |      -> network.peer.address: Str(::1)
+2025-06-23 23:52:02.947 |      -> network.peer.port: Int(49887)
+2025-06-23 23:52:02.947 |      -> network.protocol.version: Str(1.1)
+2025-06-23 23:52:02.947 |      -> user_agent.original: Str(curl/8.7.1)
+2025-06-23 23:52:02.947 |      -> url.path: Str(/spanley)
+2025-06-23 23:52:02.947 |      -> client.address: Str(::1)
+2025-06-23 23:52:02.947 |      -> server.port: Int(3000)
+2025-06-23 23:52:02.947 |      -> http.response.status_code: Int(200)
+2025-06-23 23:52:02.947 |      -> http.route: Str(/spanley)
+2025-06-23 23:52:02.947 | 	{"resource": {"service.instance.id": "b9b9f6f6-5d48-49fe-8710-bafaa2ec0f56", "service.name": "otelcol", "service.version": "0.128.0"}, "otelcol.component.id": "debug", "otelcol.component.kind": "exporter", "otelcol.signal": "traces"}
